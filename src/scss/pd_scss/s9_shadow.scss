@@ -1,0 +1,104 @@
+@media screen and (max-width: 1080px) {
+    .s9_shadow {
+        width: 100vw;
+        height: 920px;
+        position: relative;
+        background-color: #ffffff;
+
+        .s9_shadow_main {
+            width: 98vw;
+            height: 920px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            //padding-top: 100px;
+            margin: auto;
+
+            .s9_shadow_textbox {
+                width: 475px;
+                height: 228px;
+                // padding-left: 50px;
+                float: right;
+                margin-top: 125px;
+                .content {
+                    width: 387px;
+
+                }
+                .subtitle {
+                    width: 387px;
+
+                }
+                .title {
+                    width: 350px;
+                }
+
+                .s9_shadow_imgbox1 {
+                    width: 320px;
+                    height: 440px;
+
+                    .s9_shadow_photo1_img {
+                        width: 320px;
+                        height: 440px;
+                        margin-top: -20px;
+                        @include response-image-pd('../images/s9-shadow-photo2');
+                        background-size: 100% 100%;
+                        position: absolute;
+                    }
+                }
+
+                .s9_shadow_text1 {
+                    float: none;
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-weight: 65;
+                    color: #444444;
+                    margin-top: 0px;
+                }
+            }
+
+
+
+            .s9_shadow_imgbox2 {
+                width: 320px;
+                height: 440px;
+                float: left;
+
+                .s9_shadow_photo2_img {
+                    width: 320px;
+                    height: 440px;
+                    @include response-image-lg('../images/s9-shadow-video',".jpg");
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    background-size:100% 100%;
+                    margin-left: 100px;
+
+                    .s9_shadow_video {
+                        width: 320px;
+                        height: 440px;
+                        display: block;
+                    }
+    
+                    video::-webkit-media-controls {
+                        display: none !important;
+                    }
+
+                }
+
+                .s9_shadow_text2 {
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-weight: 65;
+                    color: #444444;
+                    margin-top: 16px;
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+
+    .s9_shadow_md {
+        display: none;
+    }
+}

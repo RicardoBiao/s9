@@ -1,0 +1,74 @@
+@import "../utils/utils.scss";
+
+@media (min-width: 1921px) {
+    .s9_show {
+        width: 100vw;
+        height: 1700px;
+        background-color: #fff;
+        position: relative;
+
+        .s9_show_mian {
+            width: 1600px;
+            height: 1356px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 0;
+            margin-bottom: 0;
+            .s9_show_box1 {
+                width: 776px;
+                height: 587px;
+                overflow: hidden;
+                margin-bottom: 36px;
+                background-color: #F3F6FC;
+                border-radius: 25px;
+                float: left;
+
+                .s9_show1 {
+                    width: 776px;
+                    height: 622px;
+                    margin-top: 10px;
+                    background-size: 100% 100%;
+                    @include response-image-lg('../images/s9-show1', '.jpg');
+                }
+            }
+
+            .s9_show_box2 {
+                width: 776px;
+                height: 587px;
+                overflow: hidden;
+                background-color: #F3F6FC;
+                border-radius: 25px;
+                float: right;
+
+                .s9_show2 {
+                    width: 776px;
+                    height: 622px;
+                    background-size: 100% 100%;
+                    @include response-image-lg('../images/s9-show2', '.jpg');
+                }
+            }
+
+            .s9_show_box3 {
+                width: 1600px;
+                height: 721px;
+                overflow: hidden;
+                border-radius: 25px;
+                background-color: #F3F6FC;
+                float: none;
+
+                .s9_show3 {
+                    width: 1647px;
+                    height: 741px;
+                    background-size: 100% 100%;
+                    @include response-image-xl('../images/s9-show3', '.jpg');
+                }
+            }
+
+
+        }
+    }
+}

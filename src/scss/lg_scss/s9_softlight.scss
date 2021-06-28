@@ -1,0 +1,47 @@
+.s9_softlight{
+    width: 100vw;
+    height: 1000px;
+    background-color: #ffffff;
+    position: relative;
+    padding-top:100px;
+    .s9_softlight_main{
+        width: 1100px;
+        height: 800px;
+        //top: 50%;
+        //left: 50%;
+        position:relative;
+        //transform: translate(-50%,-50%);
+        margin: auto;
+        .s9_softlight_textbox{
+            width: 525px;
+            height: 103px;
+            margin:120px auto auto 0px;
+            float: left;
+        }
+       .s9_softlight_imgbox{
+            width: 480px;
+            height: 661px;
+            float: right;
+            .s9_softlight_photo1_img{
+                width: 480px;
+                height: 661px;
+                @include response-image-lg('../images/s9-softlight-photo1');
+                background-size:100% 100%;
+                position: absolute;
+            }
+            .s9_softlight_photo2_img{
+                width: 480px;
+                height: 661px;
+                @include response-image-lg('../images/s9-softlight-photo2');
+                background-size:100% 100%;
+                position: absolute;
+                opacity: 0;
+            }
+       }
+
+    }
+}
+
+.s9_softlight_md{
+    display: none;
+}

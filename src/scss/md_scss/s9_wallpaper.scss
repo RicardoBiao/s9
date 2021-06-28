@@ -1,0 +1,85 @@
+@media screen and (max-width:768px) {
+    body {
+        .s9_wallpaper {
+            width: 100vw;
+            height: 124.5vw;
+            background: #000000;
+            position: relative;
+
+            .s9_wallpaper_main {
+                width: 100vw;
+                height: 124.5vw;
+                //top: 40%;
+                left: 50%;
+                position: absolute;
+                //transform: translate(-50%, -50%);
+                padding-top: 70px;
+                //margin: auto;
+                z-index: 10;
+
+                .s9_wallpaper_imgbox {
+                    width: 100vw;
+                    height: 100vw;
+
+                    .s9_wallpaper_phone1 {
+                        display: none;
+                    }
+
+                    .s9_wallpaper_phone2 {
+                        width: 32vw;
+                        height: 85vw;
+                        margin-top: 3vw;
+                        left: 29vw;
+                        @include response-image-md('../images/s9-wallpaper-phone2');
+                        background-size: 100% 100%;
+                        position: absolute;
+                        z-index: 2;
+                    }
+
+                    .s9_wallpaper_phone3 {
+                        width: 41vw;
+                        height: 88vw;
+                        left: 29vw;
+                        @include response-image-md('../images/s9-wallpaper-phone3');
+                        background-size: 100% 100%;
+                        position: absolute;
+                        z-index: 3;
+                    }
+
+                    .s9_wallpaper_phone4 {
+                        width: 32vw;
+                        height: 85vw;
+                        margin-top: 3vw;
+                        left: 29vw;
+                        @include response-image-md('../images/s9-wallpaper-phone4');
+                        background-size: 100% 100%;
+                        position: absolute;
+                        z-index: 2;
+                    }
+
+                    .s9_wallpaper_phone5 {
+                        display: none;
+                    }
+                }
+
+                .s9_wallpaper_textbox {
+                    width: 100vw;
+                    height: 90px;
+                    margin-top: 76px auto auto auto;
+                    text-align: center;
+                    .mid_title_white {
+                        margin: 0 auto;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    .mid_content_white {
+                        margin: 5px auto;
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

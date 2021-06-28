@@ -1,0 +1,25 @@
+@media (min-width: 1921px) {
+
+    .s9_yo {
+        width: 100vw;
+        height:50vh;
+        background: #070C1A;
+        position: relative;
+
+        .s9_yo_main {
+            width: 100%;
+            position: absolute;
+            padding: 0;
+            height: 50vh;
+
+            .s9_yo_img {
+                width: 870px;
+                height: 126px;
+                margin: 150px auto;
+                @include response-image-xl('../images/s9-yo-img');
+                background-size: 100% 100%;
+                opacity: 0;
+            }
+        }
+    }
+}

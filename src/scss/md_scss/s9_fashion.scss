@@ -1,0 +1,108 @@
+@import "../utils/utils.scss";
+
+@media screen and (max-width:768px) {
+    body {
+        .s9_fashion_md {
+            display: block;
+            width: 100vw;
+            height: 1430px;
+            position: relative;
+            background-color: #ffffff;
+
+            .s9_fashion_main_md {
+                width: 100vw;
+                height: 1330px;
+                position: relative;
+                padding-top: 40px;
+
+                .s9_fashion_textbox_md {
+                    width: 80vw;
+                    height: 238px;
+                    margin: auto;
+
+                    .title {
+                        width: 90vw;
+                    }
+                }
+
+                .s9_fashion_imgbox2_md {
+                    width: 357px;
+                    height: 565px;
+                    margin: auto;
+                    overflow:hidden;
+                    border-radius:10px;
+
+                    .s9_fashion_imgbox2_md_box {
+                        width: 357px;
+                        height: 470px;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        transform: rotate(0deg);
+                    }
+
+                    .s9_fashion_photo2_img_md {
+                        width: 357px;
+                        height: 470px;
+                        @include response-image-lg('../images/s9-fashion-photo2', ".jpg");
+                        background-size: 100% 100%;
+                    }
+
+                    .s9_fashion_text2_md {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 65;
+                        color: #444444;
+                        margin-top: 10px;
+                    }
+                }
+
+                .s9_fashion_imgbox1_md {
+                    width: 357px;
+                    height: 470px;
+                    margin: auto;
+                    position: relative;
+
+                    .s9_fashion_photo1_1_img_md {
+                        width: 357px;
+                        height: 470px;
+                        @include response-image-lg('../images/s9-fashion-photo1-1', ".jpg");
+                        background-size: 100% 100%;
+                        position: absolute;
+                        background-repeat: no-repeat;
+                    }
+
+                    .s9_fashion_photo1_2_img_md {
+                        width: 357px;
+                        height: 470px;
+                        @include response-image-lg('../images/s9-fashion-photo1-2', ".jpg");
+                        background-size: 100% 100%;
+                        position: absolute;
+                        background-repeat: no-repeat;
+                    }
+
+                    .s9_fashion_photo1_3_img_md {
+                        width: 357px;
+                        height: 470px;
+                        @include response-image-lg('../images/s9-fashion-photo1-3', ".jpg");
+                        background-size: 100% 100%;
+                        position: absolute;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .s9_fashion_text1_md {
+                    font-size: 14px;
+                    line-height: 19px;
+                    font-weight: 65;
+                    color: #444444;
+                    margin: 10px auto;
+                    width: 357px;
+                }
+            }
+        }
+
+        .s9_fashion {
+            display: none;
+        }
+    }
+}

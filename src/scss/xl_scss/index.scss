@@ -1,0 +1,288 @@
+// 手机滑落
+@import './s9_look.scss';
+// 3个细节
+@import './s9_show.scss';
+// 手感
+@import './s9_feel.scss';
+// color
+@import './s9_color.scss';
+// camrea
+@import './s9_camera.scss';
+// isocell
+@import './s9_isocell.scss';
+// softlight
+@import './s9_softlight.scss';
+// shadow
+@import './s9_shadow.scss';
+// 超广角
+@import './s9_wide.scss';
+// 个性
+@import './s9_fashion.scss';
+// yeah
+@import './s9_yeah.scss';
+// bigworld
+@import './s9_bigworld.scss';
+// night
+@import './s9_night.scss';
+// vlog
+@import './s9_vlog.scss';
+// 哟
+@import './s9_yo.scss';
+// 6nm超强芯片
+@import './s9_sixnm.scss';
+// 竞技
+@import './s9_game.scss';
+// 超大运存
+@import './s9_memory.scss';
+// 哇
+@import './s9_wa.scss';
+// TUV
+@import './s9_tuv.scss';
+// os
+@import './s9_os.scss';
+// mix
+@import './s9_mix.scss';
+// 壁纸
+@import './s9_wallpaper.scss';
+// other
+@import './s9_other.scss';
+
+@media (min-width: 1921px) {
+    body {
+        .show{
+            transform: translateY(0vh) !important;
+        }
+        .all_video_box{
+                    width: 100vw;
+                    height:100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateY(100vh);
+                    transition:transform 0s linear;
+                    will-change: transform;
+                    z-index: 10000;
+
+                    .all_video_mask {
+                        width: 100vw;
+                        height:100vh;
+                        background-color: black;
+                        opacity: 0.9;
+                    }
+
+                    .all_videobox{
+                        width: 1280px;
+                        height: 720px;
+                        position: absolute;   
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            z-index: 200;
+                        }
+                    }
+
+                    .close{
+                        background-image: url("../../images/close.svg");
+                        background-size: 100% 100%;
+                        position: absolute;
+                        bottom: -13vh;
+                        left: 50%;
+                        margin-left: -14px;
+                        width: 70px;
+                        height: 70px;
+                        z-index: 999;
+                    }
+                }
+        // tips字体
+        .describe {
+            font-family: $xl_content_font_family;
+        }
+
+        .describe_content {
+            font-family: $xl_title_font_family;
+        }
+
+        // 白色底,黑灰字
+        .subtitle {
+            font-size: $xl_subtitle_size;
+            line-height: $xl_subtitle_line_height;
+            color: $xl_subtitle_color;
+            font-family: $xl_subtitle_font_family;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: $xl_title_size;
+            line-height: $xl_title_height;
+            color: $xl_title_color;
+            margin-top: $xl_title_margin_top;
+            font-family: $xl_title_font_family;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: $xl_content_size;
+            line-height: $xl_content_line_height;
+            color: $xl_content_color;
+            margin-top: $xl_content_margin_top;
+            font-family: $xl_content_font_family;
+            font-weight: normal;
+        }
+
+        // 深色底白色字
+        .subtitle_white {
+            font-size: $xl_subtitle_size;
+            line-height: $xl_subtitle_line_height;
+            color: $xl_content_gary_color;
+            font-family: $xl_subtitle_font_family;
+            font-weight: 100;
+        }
+
+        .subtitle_white2 {
+            font-size: $xl_subtitle_size;
+            line-height: $xl_subtitle_line_height;
+            color: $xl_content_gary_color;
+            font-family: $xl_subtitle_font_family;
+            font-weight: 100;
+        }
+
+        .title_white {
+            font-size: $xl_title_size;
+            line-height: $xl_title_height;
+            color: $xl_content_white_color;
+            margin-top: $xl_title_margin_top;
+            font-family: $xl_title_font_family;
+            // font-weight: 600;
+        }
+
+        .content_white {
+            font-size: $xl_content_size;
+            line-height: $xl_content_line_height;
+            color: $xl_content_gary_color;
+            margin-top: $xl_content_margin_top;
+            font-family: $xl_content_font_family;
+            font-weight: 55;
+
+            sup {
+                top: -0.5em;
+                font-size: 12px;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+        }
+
+        // other专属
+        .mid_title_white {
+            font-size: $xl_mid_title_size;
+            line-height: $xl_mid_title_height;
+            color: $xl_mid_title_color;
+            margin-top: $xl_mid_title_margin_top;
+            margin-left: $xl_mid_title_margin_left;
+            font-family: $xl_mid_title_font_family;
+            font-weight: 400;
+        }
+
+        .mid_content_white {
+            font-size: $xl_mid_content_size;
+            line-height: $xl_mid_content_line_height;
+            color: $xl_mid_content_color;
+            margin-top: $xl_mid_content_margin_top;
+            margin-left: $xl_mid_content_margin_left;
+            font-family: $xl_mid_content_font_family;
+            font-weight: 55;
+        }
+
+        //tuv专属
+        .tuv_tips {
+            font-size: $xl_tuv_tips_size;
+            color: $xl_content_white_color;
+            margin-top: $xl_tuv_tips_margin_top;
+            font-family: $xl_content_font_family;
+            font-weight: 30;
+        }
+
+        // 默认上标
+        sup {
+            font-size: 12px;
+        }
+
+        // 标题上标,字号稍大
+        .big_sup {
+            font-size: 18px;
+            margin-left: 4px;
+            margin-bottom: 8px;
+        }
+
+
+        .buylink {
+            font-size: $xl_content_size;
+            line-height: $xl_content_line_height;
+            color: $xl_content_color;
+            margin-top: $xl_content_margin_top;
+            font-family: $xl_content_font_family;
+            font-weight: 55;
+            position: relative;
+            z-index: 10;
+        }
+
+        .buylink a::after {
+            content: "";
+            position: absolute;
+            width: $xl_content_line_height/4;
+            height: $xl_content_line_height/4;
+            border-top: 2px solid $xl_content_color;
+            border-right: 2px solid $xl_content_color;
+            top: 45%;
+            transform: rotate(45deg) translateY(-50%);
+        }
+
+        .buylink_white {
+            font-size: $xl_content_size;
+            line-height: $xl_content_line_height;
+            color: #fff;
+            margin-top: $xl_content_margin_top;
+            font-family: $xl_content_font_family;
+            font-weight: 55;
+            position: relative;
+            z-index: 10;
+        }
+
+        .buylink_white a::after {
+            content: "";
+            position: absolute;
+            width: $xl_content_line_height/4;
+            height: $xl_content_line_height/4;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            top: 45%;
+            transform: rotate(45deg) translateY(-50%);
+            margin-left: 10px;
+        }
+
+        .buylink a:hover {
+            color: #3f5bf9;
+        }
+
+        .buylink a:hover::after {
+            border-color: #3f5bf9;
+        }
+
+
+        .buylink_white a:hover {
+            color: #3f5bf9;
+        }
+
+        .buylink_white a:hover::after {
+            border-color: #3f5bf9;
+        }
+
+    }
+}

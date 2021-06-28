@@ -1,0 +1,89 @@
+.s9_shadow {
+    width: 100vw;
+    height: 1300px;
+    position: relative;
+    background-color: #ffffff;
+
+    .s9_shadow_main {
+        width: 1100px;
+        height: 1300px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        //padding-top: 100px;
+        margin: auto;
+
+        .s9_shadow_textbox {
+            width: 486px;
+            height: 228px;
+            // padding-left: 50px;
+            float: right;
+            margin-top: 125px;
+
+            .s9_shadow_imgbox1 {
+                width: 480px;
+                height: 660px;
+
+                .s9_shadow_photo1_img {
+                    width: 480px;
+                    height: 660px;
+                    margin-top: -20px;
+                    @include response-image-lg('../images/s9-shadow-photo2');
+                    background-size: 100% 100%;
+                    position: absolute;
+                }
+            }
+
+            .s9_shadow_text1 {
+                float: none;
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 65;
+                color: #444444;
+                margin-top: -4px;
+            }
+        }
+
+
+
+        .s9_shadow_imgbox2 {
+            width: 480px;
+            height: 660px;
+            float: left;
+
+            .s9_shadow_photo2_img {
+                width: 480px;
+                height: 660px;
+                @include response-image-lg('../images/s9-shadow-video',".jpg");
+                border-radius: 10px;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+
+                .s9_shadow_video {
+                    width: 480px;
+                    height: 660px;
+                    display: block;
+                }
+
+                video::-webkit-media-controls {
+                    display: none !important;
+                }
+            }
+
+            .s9_shadow_text2 {
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 65;
+                color: #444444;
+                margin-top: 16px;
+                // margin-left: 100px;
+            }
+        }
+    }
+}
+
+.s9_shadow_md {
+    display: none;
+}

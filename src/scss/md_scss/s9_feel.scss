@@ -1,0 +1,69 @@
+@import "../utils/utils.scss";
+
+@media screen and (max-width:768px) {
+    body {
+        .s9_feel {
+            width: 100vw;
+            height: 680px;
+            padding-top: 0;
+            margin-top: 0;
+            background-color: #fff;
+
+            .s9_fell_main {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .s9_fell_content {
+                    width: 80vw;
+                    height: 580px;
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 50px;
+
+                    .s9_fell_text_box {
+                        width: 80vw;
+                        height: 196px;
+                        position: relative;
+                        z-index: 3;
+
+                        .title {
+                            width: 90vw;
+                        }
+                        .content{
+                            width:78vw;
+                            @media screen and (max-width:375px){
+                                width:82vw;
+                            }
+                        }
+                    }
+
+                    .feel_hand_img_box {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 60px;
+                        margin-left: -22px;
+                        position: relative;
+                        z-index: 1;
+                        .feel_hand_img {
+                            width: 100vw;
+                            height: 404px;
+                            margin-top: 130px;
+                            @include response-image-md('../images/s9-feel-hand');
+                            background-size: 100vw 374px;
+                            background-position-x: 148px;
+                            background-repeat: no-repeat;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

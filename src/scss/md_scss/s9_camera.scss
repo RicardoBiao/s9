@@ -1,0 +1,98 @@
+@import "../utils/utils.scss";
+
+@media screen and (max-width:768px) {
+    body {
+        .s9_camera{
+            width: 100vw;
+            height: 650px;
+            position: relative;
+            background-color: #ffffff;
+            .s9_camera_main{
+                width: 80vw;
+                height: 100%;
+                position: absolute;
+                top: 57%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding-top: 60px;
+                box-sizing: border-box;
+                .s9_camera_textbox{
+                    width: 80vw;
+                    text-align: left;
+                    height: 243px;
+                    .title{
+                        line-height: 43px;
+                    }
+                }
+            .s9_camera_imgbox{
+                    width: 80vw;
+                    height: 700px;
+                    margin: auto;
+                    position: relative;
+                    .s9_camera_tips1{
+                        z-index: 2;
+                        left: 58px;
+                        margin-top: 115px;
+                        width: 150px;
+                        text-align: left;
+                        position: absolute;
+                        .describe {
+                            font-size: 14px;
+                            line-height: 19px;
+                            margin: -32px auto auto 28px;
+                        }
+                        .describe_content {
+                            margin-top:4px;
+                            color:#444444;
+                            font-size: 10px;
+                            line-height: 13px;
+                            margin: 5px auto auto 28px;
+                        }
+                        .s9_carmera_line1{
+                            width: 1px;
+                            height: 41px;
+                            background-color: #979797;
+                            margin: 6px auto auto auto
+                        }
+                    }
+                    .s9_camera_tips2{
+                        z-index: 2;
+                        left: 175px;
+                        margin-top: 40px;
+                        text-align: center;
+                        position: absolute;
+                        .describe {
+                            font-size: 14px;
+                            line-height: 19px;
+                            margin: 5px 0 0 0;
+                        }
+                        .s9_carmera_line2{
+                            width: 1px;
+                            height: 86px;
+                            background-color: #979797;
+                            margin: 6px auto auto auto
+                        }
+                    }
+                    .s9_camera_phone_box{
+                        position:absolute;
+                        .s9_camera_phone_img{
+                            width: 303px;
+                            height: 189px;
+                            margin: 152px auto auto;
+                            @include response-image-md('../images/s9-camera-phone');
+                            background-size:100% 100%;
+                        }
+                    }
+                    .s9_camera_light{
+                        position:absolute;
+                        width: 223px;
+                        height: 76px;
+                        margin: 134px auto auto 22px;
+                        @include response-image-lg('../images/s9-camera-light');
+                        background-size:100% 100%;
+                    }
+            }
+            }
+        }
+    }
+}

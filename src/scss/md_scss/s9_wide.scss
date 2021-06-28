@@ -1,0 +1,60 @@
+@import "../utils/utils.scss";
+
+@media screen and (max-width:768px) {
+    body {
+        .s9_wide_md {
+            display: block;
+            width: 100vw;
+            height: 640px;
+            position: relative;
+            background-color: #ffffff;
+
+            .s9_wide_main_md {
+                width: 100vw;
+                height: 640px;
+                padding-top: 65px;
+
+                .s9_wide_textbox_md {
+                    width: 80vw;
+                    height: 208px;
+                    text-align: left;
+                    margin: auto;
+
+                }
+
+                .s9_wide_imgbox_md {
+                    width: 357px;
+                    height: 260px;
+                    margin: auto;
+                    overflow: hidden;
+                    margin-top: 40px;
+                    position: relative;
+                    z-index: 5;
+                    border-radius: 8px;
+                    .s9_wide_photo_img1_md {
+                        width: 357px;
+                        height: 260px;
+                        margin: auto auto auto;
+                        // @include response-image-md('../images/s9-wide-photo1');
+                        background-size: 100% 100%;
+                        position: absolute;
+                    }
+
+                    .s9_wide_photo_img2_md {
+                        width: 357px;
+                        height: 260px;
+                        margin: auto auto auto;
+                        @include response-image-md('../images/s9-wide-photo2');
+                        background-size: 100% 100%;
+                        position: absolute;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .s9_wide {
+            display: none;
+        }
+    }
+}

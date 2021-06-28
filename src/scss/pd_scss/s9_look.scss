@@ -1,0 +1,311 @@
+@import "../utils/utils.scss";
+
+@media (max-width: 1080px) {
+    // .s9_look{
+    //     width: 100vw;
+    //     height: 3200px;
+    //     background-color: #fff;
+    //     @include response-image-lg('../images/s9-look-bg');
+    //     background-size:100% 100%;
+    //     position: relative;
+    //     .s9_look_main{
+    //         width:1000px;
+    //         height: 100%;
+    //         margin:auto;
+    //         .s9_look_phone1{
+    //             width: 510px;
+    //             height: 642px;
+    //             margin:280px auto auto 276px;
+    //             @include response-image-lg('../images/s9-look-phone1');
+    //             background-size:100% 100%;
+    //             position: absolute;
+    //             z-index:4;
+    //             //animation: phpnemove 3s infinite;
+    //         }
+    //         .s9_look_phone2{
+    //             width: 603px;
+    //             height: 564px;
+    //             margin:816px auto auto 45px;
+    //             @include response-image-lg('../images/s9-look-phone2');
+    //             background-size:100% 100%;
+    //             position: absolute;
+    //             z-index:3;
+    //             //animation: phpnemove 3s 2s infinite;
+    //         }
+    //         .s9_look_phone4{
+    //             width: 1000px;
+    //             height: 300px;
+    //             margin: auto;
+    //             position: absolute;
+    //             .s9_look_phone3{
+    //                 width: 499px;
+    //                 height: 697px;
+    //                 margin:1105px auto auto 423px;
+    //                 @include response-image-lg('../images/s9-look-phone3');
+    //                 background-size:100% 100%;
+    //                 position: absolute;
+    //                 z-index:2;
+    //                 //animation: phpnemove 3s 1s infinite;
+    //             }
+    //             .s9-look-left-text{
+    //                 width: 276px;
+    //                 height: 75px;
+    //                 margin-left:130px;
+    //                 margin-top:1380px;
+    //                 @include response-image-lg('../images/s9-look-left-text');
+    //                 background-size:100% 100%;
+    //                 position: absolute;
+    //                 z-index:3;
+    //                 opacity:0;
+    //             }
+    //             .s9-look-right-text{
+    //                 width: 234px;
+    //                 height: 75px;
+    //                 margin-left:628px;
+    //                 margin-top:1380px;
+    //                 @include response-image-lg('../images/s9-look-right-text');
+    //                 background-size:100% 100%;
+    //                 position: absolute;
+    //                 z-index:1;
+    //                 opacity:0;
+    //             }
+    //         }
+    //         .s9_look_btn_box{
+    //             width: 512px;
+    //             height: 64px;
+    //             margin: 3000px auto auto 244px;
+    //             position: absolute;
+    //             .s9_btn1,.s9_btn2{
+    //                 width: 226px;
+    //                 height: 64px;
+    //                 float: left;
+    //                 position: relative;
+    //                 overflow: hidden;
+    //                 border-radius: 15px;
+    //                 cursor: pointer;
+    //             }
+    //             .s9_btn2{
+    //                 float: right;
+    //             }
+    //             .s9_btn1_text,.s9_btn2_text{
+    //                 width:100%;
+    //                 position: absolute;
+    //                 font-size:22px;
+    //                 line-height:64px;
+    //                 color:#ffffff;
+    //                 text-align: center;
+    //                 font-family:HYQH-75S;
+    //             }
+    //             .s9_btn_video_bg{
+    //                 transform: translateX(-50%);
+    //                 transform: translateY(-50%);
+    //                 position:absolute;
+    //                 left:0;
+    //                 top:50%;
+    //             }
+                
+    //         }
+    //         .s9_keyframe{
+    //             width:1000px;
+    //             height: 10px;
+    //             position: absolute;
+    //             margin-top:1420px;
+    //         }
+    //         .s9-popup-player{
+    //             position: fixed;
+    //             left: 0;
+    //             top: 0;
+    //             width: 100%;
+    //             height: 100%;
+    //             z-index: 999;
+    //             display: none;
+    //             .s9_popup_player_ct{
+    //                 position: relative;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 align-items: center;
+    //             }
+    //             .mask{
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 position: absolute;
+    //                 left: 0;
+    //                 top: 0;
+    //                 background: rgba(0, 0, 0, 0.9);
+    //             }
+    //             .video-fr{
+    //                 width: 960px;
+    //                 height: 540px;
+    //                 position: relative;
+    //             }
+    //         }
+    //     }
+        
+    // }
+
+    /* @keyframes phpnemove {
+        0% {top: 0px;}
+        50% {top: 25px;}
+        100% {top: 0px;}
+    } */
+
+
+    .s9_look{
+        width: 100vw;
+        // height: 3200px;
+        height:2231px;
+        background-color: #fff;
+        @include response-image-lg('../images/s9-look-bg',".jpg");
+        background-size:100% 100%;
+        position: relative;
+        .s9_look_main{
+            width:1000px;
+            height: 100%;
+            margin:auto;
+            .s9_look_phone1{
+                width:342px;
+                height:428.67px;
+                margin:138px auto auto 359px;
+                @include response-image-lg('../images/s9-look-phone1');
+                background-size:100% 100%;
+                position: absolute;
+                z-index:4;
+                //animation: phpnemove 3s infinite;
+            }
+            .s9_look_phone2{
+                width: 402px;
+                height: 376.08px;
+                // margin:816px auto auto 45px;
+                margin:496px auto auto 209px;
+                @include response-image-lg('../images/s9-look-phone2');
+                background-size:100% 100%;
+                position: absolute;
+                z-index:3;
+                //animation: phpnemove 3s 2s infinite;
+            }
+            .s9_look_phone4{
+                width: 1000px;
+                height: 300px;
+                margin: auto;
+                position: absolute;
+                .s9_look_phone3{
+                    width: 341.33px;
+                    height: 462.67px;
+                    margin:685px auto auto 436px;
+                    // margin:685px auto auto 540px;
+                    @include response-image-lg('../images/s9-look-phone3');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index:2;
+                    //animation: phpnemove 3s 1s infinite;
+                }
+                .s9-look-left-text{
+                    width: 203px;
+                    height: 52px;
+                    margin-left:226px;
+                    margin-top:646px;
+                    @include response-image-lg('../images/s9-look-left-text');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index:3;
+                    opacity:0;
+                }
+                .s9-look-right-text{
+                    width: 178px;
+                    height: 52px;
+                    margin-left:578px;
+                    margin-top:646px;               
+                    @include response-image-lg('../images/s9-look-right-text');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index:1;
+                    opacity:0;
+                }
+            }
+            .s9_look_btn_box{
+                width: 342px;
+                height: 41px;
+                margin:2125px auto auto 341px;
+                position: absolute;
+                .s9_btn1,.s9_btn2{
+                    width: 151px;
+                    height: 41px;
+                    float: left;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+                .s9_btn1{
+                    @include response-image-pd('../images/s9-look-git-left','.gif');
+                }
+                .s9_btn2{
+                    float: right;
+                    @include response-image-pd('../images/s9-look-git-right','.gif');
+                    .s9_btn2-a{
+                        width:151px;
+                        height:41px;
+                        display:block;
+                    }
+                }
+                // .s9_btn1_text,.s9_btn2_text{
+                //     width:100%;
+                //     position: absolute;
+                //     font-size:15px;
+                //     line-height:43px;
+                //     color:#ffffff;
+                //     text-align: center;
+                //     font-family:HYQH-75S;
+                // }
+                // .s9_btn_video_bg{
+                //     transform: translateX(-50%);
+                //     transform: translateY(-50%);
+                //     position:absolute;
+                //     left:0;
+                //     top:50%;
+                // }
+                
+            }
+            .s9_keyframe{
+                width:1000px;
+                height: 10px;
+                position: absolute;
+                margin-top:800px;
+                margin-left:540px;
+            }
+            .s9-popup-player{
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                display: none;
+                .s9_popup_player_ct{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .mask{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0.9);
+                }
+                .video-fr{
+                    width: 960px;
+                    height: 540px;
+                    position: relative;
+                }
+            }
+        }
+        
+    }
+}

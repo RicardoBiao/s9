@@ -1,0 +1,81 @@
+@import "../utils/utils.scss";
+
+.s9_show {
+    width: 100vw;
+    height: 1200px;
+    background-color: #fff;
+    position: relative;
+
+    .s9_show_mian {
+        width: 1200px;
+        height: 1017px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        .s9_show_box1 {
+            width: 590px;
+            height: 440px;
+            overflow: hidden;
+            margin-bottom: 36px;
+            background-color: #F3F6FC;
+            border-radius: 15px;
+            float: left;
+            transform: rotate(0deg);
+
+            .s9_show1 {
+                width: 590px;
+                height: 475px;
+                margin-top: 10px;
+                background-size: 100% 100%;
+                @include response-image-lg('../images/s9-show1', '.jpg');
+            }
+        }
+
+        .s9_show_box2 {
+            width: 582px;
+            height: 440px;
+            overflow: hidden;
+            background-color: #F3F6FC;
+            border-radius: 15px;
+            float: right;
+            transform: rotate(0deg);
+
+            .s9_show2 {
+                width: 582px;
+                height: 511px;
+                background-size: 102% 102%;
+                @include response-image-lg('../images/s9-show2', '.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .s9_show_box3 {
+            width: 1200px;
+            height: 540px;
+            overflow: hidden;
+            border-radius: 15px;
+            background-color: #F3F6FC;
+            float: none;
+            transform: rotate(0deg);
+
+            .s9_show3 {
+                width: 1247px;
+                height: 540px;
+                background-size: 102.5% 102.5%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                @include response-image-lg('../images/s9-show3', '.jpg');
+            }
+        }
+
+    }
+}
+
+.s9_show_md {
+    display: none;
+}

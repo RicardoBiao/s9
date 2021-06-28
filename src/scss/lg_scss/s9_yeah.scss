@@ -1,0 +1,23 @@
+.s9_yeah{
+    width: 100vw;
+    height: 50vh;
+    background: #070C1A;
+    position: relative;
+
+    .s9_yeah_main{
+        width: 1000px;
+        height: 50vh;
+        margin:auto;
+        position:relative;
+        padding-top: 255px;
+        
+        .s9_yeah_img{
+            width: 745px;
+            height: 95px;
+            margin: 0 auto;
+            @include response-image-lg('../images/s9-yeah-img');
+            background-size:100% 100%;
+            opacity: 0;
+        }
+    }
+}

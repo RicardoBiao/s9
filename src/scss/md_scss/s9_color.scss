@@ -1,0 +1,304 @@
+@import "../utils/utils.scss";
+
+@media screen and (max-width:768px) {
+    body {
+        .s9_color {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+
+            .s9_color_main {
+                z-index: 5;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+
+                .s9_color_box {
+                    width: 100vw;
+                    height: 100vh;
+                    margin: 0;
+
+
+                    .s9_color1,
+                    .s9_color2,
+                    .s9_color3,
+                    .s9_color4 {
+                        width: 100vw;
+                        height: 100vh;
+                        position: absolute;
+                        display: flex;
+                        top: 48%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    //标题title
+
+                    .s9_color1_title_box,
+                    .s9_color2_title_box,
+                    .s9_color3_title_box,
+                    .s9_color4_title_box {
+                        width: 100vw;
+                        height: 100vh;
+                        max-height: 700px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        z-index: 2;
+                    }
+
+                    .s9_color1_title,
+                    .s9_color2_title,
+                    .s9_color3_title,
+                    .s9_color4_title {
+                        height: 56px;
+                        margin: 10vh auto 0;
+                        margin-left:27.5vw;
+                        background-size: 100% 100%;
+                    }
+
+                    .s9_color1_title {
+                        @include response-image-md('../images/s9-color1-title');
+                        width: 170px;   
+                        margin-left:29vw;
+                    }
+
+                    .s9_color2_title {
+                        @include response-image-md('../images/s9-color2-title');
+                        width: 175px;
+                        margin-left:28.5vw;
+                    }
+
+                    .s9_color3_title {
+                        @include response-image-md('../images/s9-color3-title');
+                        width: 232px;
+                        margin-left:22vw;
+                        @media screen and (max-width:375px){
+                            margin-left:19vw;
+                        }
+
+                    }
+
+                    //手机phone
+
+                    .s9_color_img1,
+                    .s9_color_img2,
+                    .s9_color_img3,
+                    .s9_color_img4 {
+                        background-repeat: no-repeat;
+                        position: relative;
+                        width: 277px;
+                        height: 408px;
+                        margin: auto;
+                        background-size: 277px 408px;
+                        opacity: 0;
+                        z-index: 3;
+                    }
+
+                    .s9_color_img1 {
+                        @include response-image-md('../images/s9-color1');
+                    }
+
+                    .s9_color_img2 {
+                        @include response-image-md('../images/s9-color2');
+                    }
+
+                    .s9_color_img3 {
+                        @include response-image-md('../images/s9-color3');
+                    }
+
+                    .s9_color_img4 {
+                        @include response-image-md('../images/s9-color4');
+                    }
+
+
+                    /*  .s9_color_img4 {
+                         z-index: 4;
+                         background-repeat: no-repeat;
+                         width: 195px;
+                         height: 367px;
+                         margin: 92px auto auto 10px;
+                         background-size: 100% 100%;
+                         @include response-image-md('../images/s9-color4');
+                         opacity: 0;
+                    } */
+
+                    /* .s9_color_img5 {
+                        z-index: 4;
+                        background-repeat: no-repeat;
+                        width: 200px;
+                        height: 320px;
+                        margin: 93px auto auto 89px;
+                        background-size: 100% 100%;
+                        @include response-image-md('../images/s9-color5');
+                        opacity: 0;
+                    } */
+
+                    .s9_color1_content_box,
+                    .s9_color2_content_box,
+                    .s9_color3_content_box {
+                        width: 100vw;
+                        height: 100vh;
+                        max-height: 700px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        z-index: 2;
+                    }
+
+
+                    //内容content
+
+                    .s9_color1_content,
+                    .s9_color2_content,
+                    .s9_color3_content {
+                        text-align: center;
+                        position: absolute;
+                        width:100vw;
+                        // bottom: 10.7946vh;
+                        top:81%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin: 0 auto;
+                        // margin-bottom: 10vh;
+                        align-items: center;
+                        font-size: $md_content_size;
+                        line-height: $md_content_line_height;
+                        color:#86868B;
+
+                        @media screen and (max-height:650px) {
+                            margin-bottom: 6vh;
+
+                        }
+                    }
+                    @media screen and (max-width:414px){
+                        .s9_color1_content,
+                        .s9_color2_content,
+                        .s9_color3_content {
+                            text-align: center;
+                            position: absolute;
+                            width:100vw;
+                            // bottom: 10.7946vh;
+                            top:82%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin: 0 auto;
+                            // margin-bottom: 10vh;
+                            align-items: center;
+                            font-size: $md_content_size;
+                            line-height: $md_content_line_height;
+                            @media screen and (max-height:896px){
+                                top:77%;
+                            }
+                        }
+                    }
+                    @media screen and (max-width:375px){
+                        .s9_color1_content,
+                        .s9_color2_content,
+                        .s9_color3_content {
+                            text-align: center;
+                            position: absolute;
+                            width:100vw;
+                            // bottom: 10.7946vh;
+                            top:81%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin: 0 auto;
+                            // margin-bottom: 10vh;
+                            align-items: center;
+                            font-size: $md_content_size;
+                            line-height: $md_content_line_height;
+    
+                            @media screen and (max-height:650px) {
+                                margin-bottom: 6vh;
+    
+                            }
+                        }
+                    }
+
+                    //单部手机左右文字
+                    .s9_color4 {
+                        .s9_color_left_text {
+                            z-index: 5;
+                            background-repeat: no-repeat;
+                            width: 152px;
+                            height: 35px;
+                            margin-top: 50vh;
+                            margin-left: 6vw;
+                            background-size: 100% 100%;
+                            @include response-image-lg('../images/s9-color-left-text');
+                            position: absolute;
+                            opacity: 0;
+                        }
+
+                        .s9_color_right_text {
+                            z-index: 2;
+                            background-repeat: no-repeat;
+                            width: 133px;
+                            height: 35px;
+                            margin-top: 53vh;
+                            margin-left: 67vw;
+                            z-index: 1;
+                            background-size: 100% 100%;
+                            @include response-image-lg('../images/s9-color-right-text');
+                            position: absolute;
+                            opacity: 0;
+                        }
+                    }
+
+
+                }
+            }
+
+            //背景及S图案
+            .s9_color_s_main {
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                opacity: 0;
+                z-index: 1;
+
+                .s9_color_s_box {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    margin: 0;
+                    opacity: 0;
+
+                    .s9_color_s {
+                        width: 358px;
+                        height: 408px;
+                        position: absolute;
+                        left: 0;
+                        right:0;
+                        top: 0;
+                        bottom:0;
+                        margin: auto;
+                        @include response-image-md('../images/s9-s');
+                        background-size: 100% 100%;
+                        @media screen and (max-width:375px){
+                            //top:63%;
+                        }
+                        @media screen and (max-width:375px){
+                            //top:51%;
+                        }
+                        @media screen and (max-height:812px){
+                            //top:51%;
+                        }
+                        @media screen and (max-height:736px){
+                            //top:57%;
+                        }
+                        @media screen and (max-height:667px){
+                            //top:63%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

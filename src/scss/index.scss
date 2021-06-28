@@ -1,0 +1,235 @@
+// pc 1920
+@import './lg_scss/index.scss';
+
+// pc 2560
+@import './xl_scss/index.scss';
+
+// wap
+@import './md_scss/index.scss';
+
+// pad
+@import './pd_scss/index.scss';
+
+
+// 只在wap端显示
+@media screen and (max-width:768px) {
+    body {
+        .only_in_wap {
+            display: block;
+        }
+
+        .content_white .sup,
+        .content .sup {
+            top: -2.5em;
+            font-size: 5px;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            margin-left: 0;
+
+            @-moz-document url-prefix() {
+                top: -1em;
+                font-size: 9px;
+            }
+
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+                top: -1em;
+                font-size: 9px;
+            }
+        }
+    }
+
+    .subtitle_white .sup,
+    .subtitle .sup,
+    .subtitle_white2 .sup,
+    .big_sup {
+        top: -1.5em;
+        font-size: 10px;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        margin-left: 2px;
+
+        @-moz-document url-prefix() {
+            top: -1em;
+            font-size: 12px;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            top: -1em;
+            font-size: 12px;
+        }
+
+        .bottomDivSup .big_sup {
+            font-size: 12px;
+            top: -0.8em;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:1920px) {
+    body {
+
+        .content_white .sup,
+        .content .sup {
+            top: -2.5em;
+            font-size: 5px;
+            top: -1.1em\0; // IE8
+            font-size: 12px\0; // IE8
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            margin-left: 0;
+
+            @-moz-document url-prefix() {
+                top: -1em;
+                font-size: 12px;
+            }
+
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+                top: -1em;
+                font-size: 12px;
+            }
+        }
+
+        .subtitle_white .sup,
+        .subtitle .sup {
+            top: -1.3em;
+            font-size: 15px;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            margin-left: 2px;
+        }
+
+        .bottomDivSup {
+            font-size: 16px;
+            position: relative;
+            top: -1em;
+        }
+    }
+}
+
+.only_in_wap {
+    display: none;
+}
+
+//除了wap端显示
+@media screen and (min-width:769px) {
+    body {
+        .except_wap {
+            display: block;
+        }
+    }
+}
+
+.except_wap {
+    display: none;
+}
+
+// 只在pad端显示
+@media screen and (max-width:1080px) {
+    body {
+        .only_in_pad {
+            display: block;
+        }
+
+        .except_pad {
+            display: none;
+        }
+
+        .content_white .sup,
+        .content .sup {
+            top: -1.5em;
+            font-size: 5px;
+            top: -1.1em\0; // IE8
+            font-size: 12px\0; // IE8
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            margin-left: 0;
+
+            @-moz-document url-prefix() {
+                top: -1em;
+                font-size: 9px;
+            }
+
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+                top: -1em;
+                font-size: 9px;
+            }
+        }
+
+        .subtitle_white .sup,
+        .subtitle .sup {
+            top: -1.3em;
+            font-size: 12px;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            margin-left: 2px;
+        }
+
+        .bottomDivSup {
+            font-size: 12px;
+            position: relative;
+            top: -0.8em;
+        }
+    }
+}
+
+.only_in_pad {
+    display: none;
+}
+
+
+// .sup{
+//     top:-0.5em;
+//     font-size:75%;
+//     line-height:0;
+//     position:relative;
+//     vertical-align:baseline;
+// }
+
+// .bottomDivSup{
+//     top:-1.5em;
+//     font-size: 20px;
+//     line-height:0;
+//     position:relative;
+//     vertical-align:baseline;
+// }
+
+@media screen and (min-width:1921px) {
+    body {
+
+        .content_white .sup,
+        .content .sup {
+            top: -1.1em;
+            font-size: 12px;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            margin-left: 0;
+        }
+
+        .subtitle_white .sup,
+        .subtitle .sup {
+            top: -0.8em;
+            font-size: 20px;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        .bottomDivSup {
+            top: -1.5em;
+            font-size: 20px;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+
+        }
+    }
+}

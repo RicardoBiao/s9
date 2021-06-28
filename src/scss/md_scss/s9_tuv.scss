@@ -1,0 +1,97 @@
+@media screen and (max-width:768px) {
+    body {
+        .s9_tuv {
+            width: 100vw;
+            height: 580px;
+            background: #070C1A;
+            position: relative;
+
+            .s9_tuv_main {
+                width: 100vw;
+                height: 580px;
+                position: relative;
+                padding-top: 0;
+
+                .s9_tuv_imgbox {
+                    width: 100vw;
+                    height: 28vw;
+                    margin-top: 0px;
+
+                    .s9_tuv_phone {
+                        width: 88.53vw;
+                        margin: 30px auto auto auto;
+                        height: 33.6vw;
+                        @include response-image-md('../images/s9-tuv-phone');
+                        background-size: 100% 100%;
+                    }
+                }
+
+                .s9_tuv_textbox {
+                    width: 80vw;
+                    height: 330px;
+                    margin: 0 10vw;
+                    .subtitle_white {
+                        font-size: 24px;
+                    }
+
+                    .title_white {
+                        font-size: 32px;
+                        width: 90vw;
+
+                    }
+
+                    .content_white {
+                        font-size: 15px;
+                        width:303px;
+
+                    }
+
+                    .s9_tuv_logobox {
+                        margin-top: 5px;
+                        position:relative;
+                        display: flex;
+
+                        // div {
+                        //     display: inline-flex;
+                        // }
+
+                        .s9_tuv_tuv_logo {
+                            width: 10.6vw;
+                            height: 10.6vw;
+                            @include response-image-md('../images/s9-tuv-hi-logo');
+                            background-size: 100% 100%;
+                            margin-top: 30px;
+                            margin-right: 80px;
+
+                        }
+
+                        .s9_tuv_hi_logo {
+                            // margin-top: 30px;
+                            width: 10.6vw;
+                            height: 10.6vw;
+                            @include response-image-md('../images/s9-tuv-tuv-logo');
+                            background-size: 100% 100%;
+                            margin-top: 30px;
+
+                            // position:absolute;
+                            // top:-12.2vw;
+                            // right:33.86vw;
+                            // @media screen and (max-height:667px){
+                            //     top:-7.5vh;
+                            // }
+                        }
+                        // .md-hi-special{
+                        //     position:absolute;
+                        //     top:10.5vw;
+                        //     left:35.5vw;
+                        // }
+                    }
+                }
+
+            }
+        }
+        .tuv_tips{
+            font-size: 10px;
+        }
+    }
+}

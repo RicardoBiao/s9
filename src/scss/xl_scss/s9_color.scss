@@ -1,0 +1,193 @@
+@import "../utils/utils.scss";
+@media (min-width: 1921px) {
+    .s9_color {
+        width: 100vw;
+        height: 110vh;
+        background-color: #ffffff;
+        .s9_color_s_main {
+            width: 100%;
+            height: 110vh;
+            // background-color: #ABD7FD;
+            @include response-image-lg('../images/s9-s-bg');
+            background-size: 100% 100%;
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            .s9_color_s_box {
+                width: 1416px;
+                height: 1440px;
+                margin: auto;
+                opacity: 0;
+                .s9_color_s {
+                    width: 1008px;
+                    height: 1147px;
+                    // margin: 200px auto;
+                    @include response-image-xl('../images/s9-s');
+                    background-size: 100% 100%;
+                    margin:17vh auto;
+                }
+            }
+        }
+        .s9_color_main {
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            .s9_color_box {
+                width: 1300px;
+                height: 1037px;
+                // margin: 210px auto auto 540px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin:0;
+                .s9_color1,
+                .s9_color2,
+                .s9_color3,
+                .s9_color4 {
+                    position: absolute;
+                    display: flex;
+                    position: absolute;
+                    width: 632px;
+                    height: 937px;
+                    top: 49%;
+                    left: 53%;
+                    transform: translate(-50%,-50%);
+                    margin:0;
+                }
+                .s9_color4 {
+                    .s9_color_left_text {
+                        z-index: 5;
+                        background-repeat: no-repeat;
+                        width: 563px;
+                        height: 125px;
+                        margin: 0;
+                        background-size: 100% 100%;
+                        @include response-image-xl('../images/s9-color-left-text');
+                        position: absolute;
+                        opacity: 0;
+                        top: 47%;
+                        left: -50%;
+                    }
+                    .s9_color_right_text {
+                        z-index: 2;
+                        background-repeat: no-repeat;
+                        width: 390px;
+                        height: 85px;
+                        margin: 0;
+                        background-size: 100% 100%;
+                        @include response-image-xl('../images/s9-color-right-text');
+                        position: absolute;
+                        opacity: 0;
+                        top: 56%;
+                        left: 69%;
+                    }
+                }
+                .s9_color1_title,
+                .s9_color2_title {
+                    opacity: 0;
+                    height: 40px;
+                    opacity: 0;
+                    position: absolute;
+                    top: 39%;
+                    left: -21%;
+                    transform: translate(-50%,-50%);
+                    margin: 0;
+                    background-size: 100% 100%;
+                }
+                .s9_color3_title {
+                    opacity: 0;
+                    height: 40px;
+                    position: absolute;
+                    top: 39%;
+                    left: -21%;
+                    transform: translate(-50%,-50%);
+                    margin: 0;
+                    background-size: 100% 100%;
+                }
+                .s9_color1_content,
+                .s9_color2_content {
+                    opacity: 0;
+                    width: 332px;
+                    position: absolute;
+                    top: 37%;
+                    left: 137%;
+                    transform: translate(-50%,-50%);
+                    margin: 0;
+                    text-align: left;
+                    font-size: $lg_content_size;
+                    line-height: $lg_content_line_height;
+                    color:#86868B;
+                }
+                .s9_color3_content {
+                    opacity: 0;
+                    width: 332px;
+                    position: absolute;
+                    top: 37%;
+                    left: 137%;
+                    transform: translate(-50%,-50%);
+                    margin: 0;
+                    text-align: left;
+                    font-size: $lg_content_size;
+                    line-height: $lg_content_line_height;
+                    color:#86868B;
+                }
+                .s9_color1_title {
+                    @include response-image-xl('../images/s9-color1-title');
+                    width: 124px;
+                }
+                .s9_color2_title {
+                    @include response-image-xl('../images/s9-color2-title');
+                    width: 124px;
+                }
+                .s9_color3_title {
+                    @include response-image-xl('../images/s9-color3-title');
+                    width: 163px;
+                }
+                .s9_color_img1,
+                .s9_color_img2,
+                .s9_color_img3,
+                .s9_color_img4 {
+                    background-repeat: no-repeat;
+                    width: 632px;
+                    height: 937px;
+                    // margin-left: 430px;
+                    // margin-top: 60px;
+                    position: absolute;
+                    background-size: 100% 100%;
+                    opacity: 0;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    margin:0;
+                }
+                .s9_color_img4 {
+                    z-index: 4;
+                    // background-repeat: no-repeat;
+                    // width: 632px;
+                    // height: 937px;
+                    // margin-left: 430px;
+                    // margin-top: 60px;
+                    // background-size: 100% 100%;
+                    @include response-image-lg('../images/s9-color4');
+                    // position: absolute;
+                    // opacity: 0;
+                    // top: 50%;
+                    // left: 50%;
+                    // transform: translate(-50%,-50%);
+                    // margin:0;
+                }
+                .s9_color_img1 {
+                    @include response-image-lg('../images/s9-color1', '.jpg');
+                }
+                .s9_color_img2 {
+                    @include response-image-lg('../images/s9-color2', ".jpg");
+                }
+                .s9_color_img3 {
+                    @include response-image-lg('../images/s9-color3');
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@media (min-width: 1921px) {
+    .s9_other {
+        width: 100vw;
+        height: 1800px;
+        background: #000000;
+        position: relative;
+
+        .s9_other_main {
+            width: 1600px;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            margin: 200px auto 200px auto;
+
+            .s9_other_box1 {
+                width: 800px;
+                height: 1360px;
+                border-radius: 10px;
+                background-color: #1E1F23;
+                float: left;
+
+                .s9_other_box1_textbox {
+                    margin: 64px auto auto 84px;
+                }
+
+                .s9_other_phone {
+                    width: 446px;
+                    height: 955px;
+                    margin: 116px auto auto 93px;
+                    @include response-image-lg('../images/s9-other-phone',".jpg");
+                    background-size: 100% 100%;
+                }
+            }
+
+            .s9_other_box2 {
+                width: 734px;
+                height: 707px;
+                border-radius: 10px;
+                background-color: #1E1F23;
+                float: right;
+
+                .s9_other_box2_textbox {
+                    margin: 65px auto auto 75px;
+                }
+
+                .s9_other_element {
+                    width: 581px;
+                    height: 381px;
+                    margin: 62px auto auto 76px;
+                    @include response-image-xl('../images/s9-other-element', ".jpg");
+                    background-repeat: no-repeat;
+                    background-size: 101% 101%;
+                    background-position: center center;
+                }
+            }
+
+            .s9_other_box3 {
+                width: 734px;
+                height: 587px;
+                border-radius: 10px;
+                background-color: #1E1F23;
+                margin-top: 66px;
+                float: right;
+
+                .s9_other_box3_textbox {
+                    margin: 65px auto auto 75px;
+                }
+
+                .s9_other_mole {
+                    width: 583px;
+                    height: 276px;
+                    margin: 62px auto auto 75px;
+                    @include response-image-xl('../images/s9-other-mole');
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+}

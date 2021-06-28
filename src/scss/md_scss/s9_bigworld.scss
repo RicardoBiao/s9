@@ -1,0 +1,157 @@
+@media screen and (max-width:768px) {
+    body {
+        .s9_bigworld {
+            width: 100vw;
+            height: 100vh;
+            background: #070C1A;
+            position: relative;
+
+            .s9_bigworld_main {
+                min-width: 100vw;
+                width: 100vw;
+                height: 100vh;
+                min-height: 660px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 20vw auto auto;
+                box-sizing: border-box;
+                @include response-image-md('../images/s9-bigworld-phone');
+                background-size: 375px 376px;
+                background-repeat: no-repeat;
+                background-position: right;
+                background-position-y: 242px;
+
+                .s9_bigworld_textbox {
+                    width: 80vw;
+                    height: 240px;
+                    // margin: auto 10vw;
+                    // margin-bottom: 32px;
+                    margin: 0 auto;
+                    left: 0;
+                    .title_white {
+                        width: 90vw;
+                    }
+
+                    .subtitle_white {
+                        display: none;
+                    }
+
+                    .subtitle_white2 {
+                        display: block;
+                        line-height: 33px;
+                    }
+
+                    .content_white {
+                        width: 80vw;
+                    }
+                }
+
+                .s9_bigworld_imgbox {
+                    margin-top: 32px;
+                    width: 100vw;
+                    height: 50vh;
+
+                    .s9_bigworld_phone_box {
+                        margin-top: 32px;
+                    }
+
+                    .s9_bigworld_tips1 {
+                        z-index: 2;
+                        right: 148px;
+                        margin-top: 64px;
+                        text-align: center;
+                        position: absolute;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: 75;
+                            color: #ffffff;
+                        }
+
+                        .s9_bigworld_line1 {
+                            width: 1px;
+                            height: 108px;
+                            background-color: #E8E8E8;
+                            margin: 8px 0px auto 100px
+                        }
+                    }
+
+                    .s9_bigworld_tips2 {
+                        z-index: 2;
+                        right: 116px;
+                        margin-top: 29px;
+                        text-align: center;
+                        position: absolute;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: 75;
+                            color: #ffffff;
+                        }
+
+                        .s9_bigworld_line2 {
+                            width: 1px;
+                            height: 121px;
+                            background-color: #E8E8E8;
+                            margin: 8px 0px auto 80px
+                        }
+                    }
+
+                    .s9_bigworld_tips3 {
+                        z-index: 2;
+                        right: 87px;
+                        text-align: center;
+                        position: absolute;
+                        margin-top: -1px;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: 75;
+                            color: #ffffff;
+                        }
+
+                        .s9_bigworld_line3 {
+                            width: 1px;
+                            height: 163px;
+                            background-color: #E8E8E8;
+                            margin: 8px 0px auto 92px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height:600px) {
+    body {
+        .s9_bigworld {
+            .s9_bigworld_main {
+                height: 130vh;
+            }
+        }
+    }
+}
+@media screen and (max-height:550px) {
+    body {
+        .s9_bigworld {
+            .s9_bigworld_main {
+                height: 150vh;
+            }
+        }
+    }
+}
+@media screen and (max-height:500px) {
+    body {
+        .s9_bigworld {
+            .s9_bigworld_main {
+                height: 190vh;
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+/**
+ * Powered by uimix.com;
+ * Vivo product project - 产品库页面开发框架;
+ * Version: 3.15.0;
+ * Released on: 2020-08-20;
+ */
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: "Avenir-Next-Demi-Blod";
+  /* src: url(Avenir-Next-Demi-Blod.eot); */
+  src:
+    /* url(Avenir-Next-Demi-Blod.eot?#ie-fixed) format("embedded-opentype"), */
+    url(Avenir-Next-Demi-Blod.woff) format("woff"),
+    url(Avenir-Next-Demi-Blod.ttf) format("trueType"),
+    url(Avenir-Next-Demi-Blod.svg) format("svg");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "Avenir-Next-Medium";
+  src: url(Avenir-Next-Medium.eot);
+  src: url(Avenir-Next-Medium.eot?#ie-fixed) format("embedded-opentype"),
+    url(Avenir-Next-Medium.woff2) format("woff2"),
+    url(Avenir-Next-Medium.woff) format("woff"),
+    url(Avenir-Next-Medium.ttf) format("truetype");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "Avenir-Next-Regular";
+  src: url(Avenir-Next-Regular.eot);
+  src: url(Avenir-Next-Regular.eot?#ie-fixed) format("embedded-opentype"),
+    url(Avenir-Next-Regular.woff2) format("woff2"),
+    url(Avenir-Next-Regular.woff) format("woff"),
+    url(Avenir-Next-Regular.ttf) format("truetype");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "FZLT-ZHJ";
+  src: url(FZLT-ZHJ.eot);
+  src: url(FZLT-ZHJ.eot?#ie-fixed) format("embedded-opentype"),
+    url(FZLT-ZHJ.woff) format("woff"), 
+    url(FZLT-ZHJ.ttf) format("trueType"),
+    url(FZLT-ZHJ.svg) format("svg");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "FZLT-HJ";
+  src:url(FZLT-HJ.eot);
+  src: url(FZLT-HJ.eot?#ie-fixed) format("embedded-opentype"),
+    url(FZLT-HJ.woff) format("woff"), 
+    url(FZLT-HJ.ttf) format("trueType"),
+    url(FZLT-HJ.svg) format("svg");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "FZLT-XHJ";
+  src:url(FZLT-XHJ.eot);
+  src: url(FZLT-XHJ.eot?#ie-fixed) format("embedded-opentype"),
+    url(FZLT-XHJ.woff) format("woff"), 
+    url(FZLT-XHJ.ttf) format("trueType"),
+    url(FZLT-XHJ.svg) format("svg");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "HYQH-55S";
+  src: url(HYQiHei-55S_vivo-Design-02.eot);
+  src: url(HYQiHei-55S_vivo-Design-02.eot?#ie-fixed) format("embedded-opentype"),
+    url(HYQiHei-55S_vivo-Design-02.woff2) format("woff2"),
+    url(HYQiHei-55S_vivo-Design-02.woff) format("woff"),
+    url(HYQiHei-55S_vivo-Design-02.ttf) format("truetype");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "HYQH-60S";
+  src: url(HYQiHei-60S_vivo-Design-02.eot);
+  src: url(HYQiHei-60S_vivo-Design-02.eot?#ie-fixed) format("embedded-opentype"),
+    url(HYQiHei-60S_vivo-Design-02.woff2) format("woff2"),
+    url(HYQiHei-60S_vivo-Design-02.woff) format("woff"),
+    url(HYQiHei-60S_vivo-Design-02.ttf) format("truetype");
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "HYQH-65S";
+  src: url(HYQiHei-65S_vivo-Design-02.eot);
+  src: url(HYQiHei-65S_vivo-Design-02.eot?#ie-fixed) format("embedded-opentype"),
+    url(HYQiHei-65S_vivo-Design-02.woff) format("woff"),
+    url(HYQiHei-65S_vivo-Design-02.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "HYQH-75S";
+  src: url(HYQiHei-75S_vivo-Design-02.eot);
+  src: url(HYQiHei-75S_vivo-Design-02.eot?#ie-fixed) format("embedded-opentype"),
+    url(HYQiHei-75S_vivo-Design-02.woff) format("woff"),
+    url(HYQiHei-75S_vivo-Design-02.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "my_iconfont";
+  src: url("iconfont.eot");
+  /* IE9 */
+  src: url("iconfont.eot") format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKUAAsAAAAABngAAAJJAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAp8gQkBNgIkAwgLBgAEIAWEbQc1G7QFyK4wbuGJgHSGcbQQXJWPOAWAp/Hw337tvvmzi0oS0e5ZNJkkUiFBbIRO5VA9a9r7X2tnFoE8r5/HS5il07wyf+3LvtnBvVrongqECKHREzxD4RKQ+b+92004ZyllsQGX0x8FFMg8oNzmWDqmZoGlge6BUWQFlmXcMHYTwQO8T6BWj7r0xvLmMFWSgWWBuA08K1UqhGTZyVYL5Ya9WTwoqU53Kdzzz8eXhSiRlAqgbvtmyU3NvoJ5hQpHlBAmGIdLKDAlJRP7jalNWeGwsmpTOQNSx6oOXlWmFnFUo3D+OlBZD7p00TOJseRRKxPIcnJIyuykrye1th48vJ3NjCcvZ6/3U8PH0+nRU63S0IVTvke8AL0Je5WZHBnddIPbCvCzYjezQPD0/0+b/K6uy+C5ZpsbsmEeqnfsDn6QeGBfjqXAnHIobvQkQ5OWJtSqRYXpa/U3VddxN7lQreOePFW6M0ehOhbrZGZOoaTOEsqqLaPWpJXDddqQrMg1mHClITT7QtLoEYVmP2Rm/qKk0z/KmiOLWofBmXVGIqhEaDG6YO9B4BgtkJUrorqP3pa0KC/l7DFSEkSh02yXsyuokZbYkGx7XWYBgoyCZe0xlNJATCZEh5s+c9xrtUTTi5qOUamKdQRZGHIB2x4QcBiaoONZpfL+PuTZIlmoo2kkOIZIIpgedDS1B5ArKj2o6VGeSWzzdDEmAIEYCljWZiFJMkDcPCuEHKzJn5CI9bTgMDFU1dxeo36g0GkD6FPArYW6cyKzI1GwK1Mp")
+      format("woff2"),
+    url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url("iconfont.svg")
+      format("svg");
+  /* iOS 4.1- */
+}
+
+.my-iconfont {
+  font-family: "my_iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowleftdl:before {
+  content: "\e6a5";
+}
+@font-face {
+  font-family: iconfont-symbol-products;
+  src: url(iconfont-symbol-products.eot);
+  src: url(iconfont-symbol-products.eot?#iefix) format("eot"),
+    url(iconfont-symbol-products.woff2) format("woff2"),
+    url(iconfont-symbol-products.woff) format("woff"),
+    url(iconfont-symbol-products.ttf) format("truetype"),
+    url(iconfont-symbol-products.svg#iconfont-symbol-products) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.iconfont-symbol-products:before {
+  display: inline-block;
+  font-family: iconfont-symbol-products;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ico-360-degree:before {
+  content: "\EA01";
+}
+.ico-camera-1:before {
+  content: "\EA02";
+}
+.ico-camera-2:before {
+  content: "\EA03";
+}
+.ico-camera-3:before {
+  content: "\EA04";
+}
+.ico-customer-guarantee:before {
+  content: "\EA05";
+}
+.ico-customer-laser:before {
+  content: "\EA06";
+}
+.ico-customer-service:before {
+  content: "\EA07";
+}
+.ico-direct-arrow:before {
+  content: "\EA08";
+}
+.ico-discern-1:before {
+  content: "\EA09";
+}
+.ico-discern-2:before {
+  content: "\EA0A";
+}
+.ico-dividedPay:before {
+  content: "\EA0B";
+}
+.ico-exchange:before {
+  content: "\EA0C";
+}
+.ico-gift-box:before {
+  content: "\EA0D";
+}
+.ico-offline-store:before {
+  content: "\EA0E";
+}
+.ico-pay-alipay:before {
+  content: "\EA0F";
+}
+.ico-pay-huabei:before {
+  content: "\EA10";
+}
+.ico-pay-weichat:before {
+  content: "\EA11";
+}
+.ico-postage:before {
+  content: "\EA12";
+}
+.ico-quality-goods:before {
+  content: "\EA13";
+}
+.ico-service-support:before {
+  content: "\EA14";
+}
+.ico-sns-qq:before {
+  content: "\EA15";
+}
+.ico-sns-weichat:before {
+  content: "\EA16";
+}
+.ico-symbol-arrows:before {
+  content: "\EA17";
+}
+.ico-symbol-close:before {
+  content: "\EA18";
+}
+.ico-symbol-close1:before {
+  content: "\EA19";
+}
+.ico-symbol-plus:before {
+  content: "\EA1A";
+}
+.ico-video-play:before {
+  content: "\EA1B";
+}
+.ico-video-replay:before {
+  content: "\EA1C";
+}
+
+@font-face {
+  font-family: QiHeiVarforvivoGX;
+  src: url(QiHeiVarforvivoGX.eot);
+  src: url(QiHeiVarforvivoGX.eot?#iefix) format("eot"),
+    url(QiHeiVarforvivoGX.woff) format("woff"),
+    url(QiHeiVarforvivoGX.ttf) format("truetype"),
+    url(QiHeiVarforvivoGX.svg#QiHeiVarforvivoGX) format("svg");
+}

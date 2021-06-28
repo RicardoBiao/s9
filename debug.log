@@ -1,0 +1,44 @@
+[1221/163456.188:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163456.384:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163456.283:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163456.387:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163456.818:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163456.820:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163456.819:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163456.823:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163456.849:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163456.849:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.288:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.289:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163456.387:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163456.849:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163456.823:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.289:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163456.820:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163456.385:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.395:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.395:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.395:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.395:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.395:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.395:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.395:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.395:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.395:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.396:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.396:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.396:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.566:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.566:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.566:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.636:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[1221/163457.636:ERROR:exception_snapshot_win.cc(98)] thread ID 22884 not found in process
+[1221/163457.636:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1221/163457.901:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[1221/163457.901:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1221/163457.901:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[0222/231631.351:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0223/114556.961:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0224/134611.435:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0225/232259.254:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0226/141945.145:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)

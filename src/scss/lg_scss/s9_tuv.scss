@@ -1,0 +1,52 @@
+.s9_tuv{
+    width: 100vw;
+    height: 1360px;
+    background: #070C1A;
+    position: relative;
+    .s9_tuv_main{
+        width: 1100px;
+        //height: 1360px;
+        top: 50%;
+        left: 50%;
+        position:absolute;
+        transform: translate(-50%,-50%);
+        padding-top: 210px;
+        margin: auto;
+        .s9_tuv_imgbox{
+            width: 437px;
+            height: 1153px;
+            float: left;
+            .s9_tuv_phone{
+                width: 437px;
+                height: 1153px;
+                @include response-image-lg('../images/s9-tuv-phone');
+                background-size:100% 100%;
+            }
+       }
+        .s9_tuv_textbox{
+            width: 430px;
+            height: 800px;
+            margin-top:156px;
+            float: right;
+            .content_white{
+                width:497px;
+            }
+            .s9_tuv_logobox{
+                margin-top:135px;
+                .s9_tuv_tuv_logo{
+                    width: 80px;
+                    height: 80px;
+                    @include response-image-lg('../images/s9-tuv-hi-logo');
+                    background-size:100% 100%;
+                }
+                .s9_tuv_hi_logo{
+                    width: 80px;
+                    height: 80px;
+                    @include response-image-lg('../images/s9-tuv-tuv-logo');
+                    background-size:100% 100%;
+                    margin-top:70px;
+                }
+            }
+        }
+    }
+}

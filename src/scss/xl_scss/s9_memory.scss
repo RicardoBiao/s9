@@ -1,0 +1,60 @@
+@media (min-width: 1921px) {
+
+    .s9_memory {
+        width: 100vw;
+        height: 1440px;
+        background: #070C1A;
+        position: relative;
+
+        .s9_memory_main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: auto;
+            padding-top: 0;
+
+            .s9_memory_textbox {
+                width: 1000px;
+                height: 220px;
+                z-index: 1;
+                text-align: center;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .s9_memory_imgbox {
+                width: 2560px;
+                height: 1440px;
+                margin: auto;
+                position: absolute;
+
+                .s9_memory_photo_img1 {
+                    width: 2560px;
+                    height: 1440px;
+                    margin: 0;
+                    @include response-image-xl('../images/s9-memory-img',".jpg");
+                    background-size: 100% 100%;
+                    background-position-y: -100px;
+                    position: absolute;
+                }
+
+                .s9_memory_photo_img2 {
+                    width: 2560px;
+                    height: 1440px;
+                    margin: 0;
+                    @include response-image-lg('../images/s9-memory-img2',".jpg");
+                    background-size: 100% 100%;
+                    background-position-y: -100px;
+                    position: absolute;
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+    .s9_memory_md {
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+@media(max-width:1080px) {
+    .s9_wa{
+        width: 100vw;
+        height: 100vh;
+        background: #070C1A;
+        position: relative;
+    
+        .s9_wa_main{
+            width: 100%;
+            position:absolute;
+            margin:auto;
+            padding:0;
+    
+            .s9_wa_img{
+                width: 412.8px;
+                height: 62.28px;
+                margin: auto;
+                @include response-image-lg('../images/s9-wa-img');
+                background-size:100% 100%;
+                opacity: 0;
+            }
+        }
+    }
+}

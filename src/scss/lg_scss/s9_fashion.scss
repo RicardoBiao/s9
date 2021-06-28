@@ -1,0 +1,103 @@
+.s9_fashion {
+    width: 100vw;
+    height: 1300px;
+    position: relative;
+    background-color: #ffffff;
+
+    .s9_fashion_main {
+        width: 1100px;
+        height: 1300px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        //padding-top: 100px;
+        margin: auto;
+
+        .s9_fashion_textbox {
+            width: 525px;
+            height: 228px;
+            padding-left: 0px;
+            float: left;
+            margin-top: 125px;
+
+            .s9_fashion_imgbox1 {
+                width: 480px;
+                height: 660px;
+                border-radius: 10px;
+
+                .s9_fashion_photo1_1_img {
+                    width: 480px;
+                    height: 660px;
+                    margin-top: 0px;
+                    @include response-image-lg('../images/s9-fashion-photo1-1', ".jpg");
+                    background-size: 100% 100%;
+                    position: absolute;
+                }
+
+                .s9_fashion_photo1_2_img {
+                    width: 480px;
+                    height: 660px;
+                    margin-top: 0px;
+                    @include response-image-lg('../images/s9-fashion-photo1-2', ".jpg");
+                    background-size: 100% 100%;
+                    position: absolute;
+                }
+
+                .s9_fashion_photo1_3_img {
+                    width: 480px;
+                    height: 660px;
+                    margin-top: 0px;
+                    @include response-image-lg('../images/s9-fashion-photo1-3', ".jpg");
+                    background-size: 100% 100%;
+                    position: absolute;
+                }
+            }
+
+            .s9_fashion_text1 {
+                float: none;
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 65;
+                color: #444444;
+                margin-top: 20px;
+            }
+        }
+
+        .s9_fashion_imgbox2 {
+            width: 480px;
+            height: 720px;
+            float: right;
+            overflow: hidden;
+
+            .s9_fashion_imgbox2_box {
+                width: 480px;
+                height: 660px;
+                overflow: hidden;
+                border-radius: 10px;
+                transform: rotate(0deg);
+                .s9_fashion_photo2_img {
+                    width: 480px;
+                    height: 660px;
+                    @include response-image-lg('../images/s9-fashion-photo2', ".jpg");
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+
+            .s9_fashion_text2 {
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 65;
+                color: #444444;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+.s9_fashion_md {
+    display: none;
+}

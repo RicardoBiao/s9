@@ -1,0 +1,218 @@
+.textlink {
+    /* display: inline-block; */
+    display: block !important;
+    margin-top: 26px;
+    position: relative;
+    width: 100%;
+    
+}
+
+@media (max-width:1080px) {
+    .section .textlink {
+        /* padding-left: 36px */
+    }
+}
+
+.section .textlink .textlink-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left
+}
+
+.section .textlink .textlink-box a {
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    will-change: transform;
+    -webkit-transition: color .3s cubic-bezier(.645, .045, .355, 1);
+    transition: color .3s cubic-bezier(.645, .045, .355, 1);
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(65, 95, 255, 0);
+
+}
+
+.section .textlink .textlink-box a p {
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 1px;
+    font-family: Avenir-Next-Demi-Blod, FZLT-ZHJ;
+    color: #fff;
+}
+
+@media (min-width:1921px) {
+    .section .textlink .textlink-box a p {
+        font-size: 28px;
+        line-height: 28px
+    }
+}
+
+@media (max-width:1080px) {
+    .section .textlink .textlink-box a p {
+        font-size: 16px;
+        line-height: 16px
+    }
+}
+
+.section .textlink .textlink-box a p span {
+    -webkit-font-smoothing: antialiased;
+    will-change: transform;
+    -webkit-transition: fill .3s cubic-bezier(.645, .045, .355, 1);
+    transition: fill .3s cubic-bezier(.645, .045, .355, 1);
+    margin-left: 4px
+}
+
+@media (min-width:1921px) {
+    .section .textlink .textlink-box a p span {
+        vertical-align: -1px;
+        margin-left: 6px;
+        width: 12px;
+        height: 21px
+    }  
+}
+
+@media (max-width:1080px) {
+    .section .textlink .textlink-box a p span {
+        margin-left: 4px
+    }
+}
+
+.section .textlink .textlink-box a p span svg {
+    width: 8px;
+    height: 14px
+}
+
+@media (min-width:1921px) {
+    .section .textlink .textlink-box a p span svg {
+        width: 12px;
+        height: 21px
+    }
+}
+
+.section .textlink .textlink-box a::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -12px;
+    border-width: 0 2px 2px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 5px;
+    border-style: solid;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: middle;
+    -webkit-transition: border-color 2s ease .05s;
+    transition: border-color 2s ease .05s;
+    color: #fff;
+}
+
+@media (min-width:1921px) {
+    .section .textlink .textlink-box a::after {
+        width: 14px;
+        height: 14px;
+        right: -16px;
+        top: 7px;
+        border-width: 0 3px 3px 0
+    }
+}
+
+@media (max-width:1080px) {
+    .section .textlink .textlink-box a::after {
+        width: 8px;
+        height: 8px;
+        right: -10px;
+        top: auto;
+        margin-top: -13px;
+        border-width: 0 2px 2px 0
+    }
+}
+
+.section .textlink .textlink-box a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21px;
+    height: 2px
+}
+
+@media (min-width:1921px) {
+    .section .textlink .textlink-box a::before {
+        top: 29px
+    }
+}
+
+.section .textlink .textlink-box a:hover::after {
+    color: #415fff;
+    -webkit-transition: .4s ease .05s;
+    transition: .4s ease .05s
+}
+
+.section .textlink .textlink-box a:hover::before {
+    background: #415fff;
+    -webkit-transition: .4s ease .05s;
+    transition: .4s ease .05s
+}
+
+.section .textlink .textlink-box a:hover p {
+    color: #415fff
+}
+
+.section .textlink .textlink-box strong {
+    will-change: transform;
+    -webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+    transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+    opacity: 0;
+    background-color: #415fff;
+    height: 2px;
+    width: 110px;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 78px;
+    top: 23px;
+    left: 2px
+}
+
+@media (min-width:1921px) {
+    .section .textlink .textlink-box strong {
+        width: 110px;
+        top: 30px;
+        left: 2px
+    }
+}
+
+@media (max-width:1080px) {
+    .section .textlink .textlink-box strong {
+        width: 60px;
+        top: 19px
+    }
+}
+
+.section .textlink .textlink-box a:active {
+    color: rgba(65, 95, 255, .7)
+}
+
+.section .textlink .textlink-box a:active strong {
+    opacity: .7
+}
+
+.section .textlink .textlink-box a:active span {
+    fill: rgba(65, 95, 255, .7)
+}
+
+.section .textlink-dark .textlink-box a {
+    color: #fff
+}
+
+.section .textlink-dark .textlink-box a p span {
+    fill: #fff
+}

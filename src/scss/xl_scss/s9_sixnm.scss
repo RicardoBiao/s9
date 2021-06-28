@@ -1,0 +1,92 @@
+@media (min-width: 1921px) {
+
+    .s9_sixnm {
+        width: 100vw;
+        height: 1300px;
+        background: #070C1A;
+        position: relative;
+        padding-top: 0px;
+
+        .s9_sixnm_main {
+            width: 1117px;
+            position: relative;
+            margin: auto;
+
+            .s9_sixnm_textbox {
+                width: 1117px;
+                text-align: center;
+                height: 140px;
+                margin: auto;
+            }
+
+            .s9_sixnm_box {
+                width: 1117px;
+                height: 810px;
+                margin: auto;
+            }
+            .s9_sixnm_icon_box {
+                width: 513px;
+                height: 111px;
+                margin: auto;
+                margin-top: 10px;
+                position: relative;
+    
+            .s9_sixnm_icon1 {
+                width: 112px;
+                height: 104px;
+                @include response-image-xl('../images/s9-sixnm-icon1');
+                background-size:100% 100%;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .s9_sixnm_icon2 {
+                width: 112px;
+                height: 104px;
+                @include response-image-xl('../images/s9-sixnm-icon2');
+                background-size:100% 100%;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 0;
+    
+            }
+           }
+
+            .s9_sixnm_imgbox {
+                width: 1117px;
+                margin: auto;
+            }
+
+            .s9_sixnm_photo_img1 {
+                width: 1117px;
+                height: 1264px;
+                @include response-image-xl('../images/s9-6nm-img');
+                background-size: 100% 100%;
+                position: absolute;
+            }
+
+            .s9_sixnm_photo_img2 {
+                width: 1117px;
+                height: 1264px;
+                @include response-image-xl('../images/s9-6nm-img2');
+                background-size: 100% 100%;
+                position: absolute;
+                opacity: 0;
+            }
+
+            .content_white {
+                //width: 675px;
+                text-align: center;
+                height: 70px;
+                margin: 50px auto auto auto;
+            }
+
+        }
+    }
+
+    .s9_sixnm_md {
+        display: none;
+    }
+}

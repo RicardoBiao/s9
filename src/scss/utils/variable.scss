@@ -1,0 +1,205 @@
+//用于定义全局的 scss 变量
+
+/******************
+*   pc端 1920像素
+*******************/
+
+//lg小标题
+$lg_subtitle_size:32px;
+$lg_subtitle_line_height:43px;
+$lg_subtitle_color:#666666;
+$lg_subtitle_font_family:HYQH-65S;
+
+//lg大标题
+$lg_title_size:46px;
+$lg_title_height:50px;
+$lg_title_color:#000;
+$lg_title_margin_top:10px;
+$lg_title_font_family:HYQH-65S;
+
+//lg内容
+$lg_content_size:22px;
+$lg_content_line_height:35px;
+$lg_content_color:#444444;
+$lg_content_margin_top:23px;
+$lg_content_font_family:HYQH-65S;
+
+//lg大标题 other专属
+$lg_mid_title_size:40px;
+$lg_mid_title_height:43px;
+$lg_mid_title_color:#ffffff;
+$lg_mid_title_margin_top:10px;
+$lg_mid_title_font_family:HYQH-65S;
+
+//lg内容 other专属
+$lg_mid_content_size:22px;
+$lg_mid_content_line_height:35px;
+$lg_mid_content_color:#A1A1A6;
+$lg_mid_content_margin_top:10px;
+$lg_mid_content_font_family:HYQH-65S;
+
+//白色字体
+$lg_content_white_color:#ffffff;
+$lg_content_gary_color:#9E9E9E;
+
+//tuv 专属
+$lg_tuv_tips_size: 22px;
+$lg_tuv_tips_margin_top:20px;
+
+
+/******************
+*   wap端
+*******************/
+
+//md小标题
+$md_subtitle_size:24px;
+$md_subtitle_line_height:36px;
+$md_subtitle_color:#666666;
+$md_subtitle_font_family:HYQH-65S;
+
+//md大标题
+$md_title_size:32px;
+$md_title_height:43px;
+$md_title_color:#000;
+$md_title_margin_top:0px;
+$md_title_font_family:HYQH-65S;
+
+//md内容
+$md_content_size:15px;
+$md_content_line_height:24px;
+$md_content_color:#86868b;
+$md_content_margin_top:15px;
+$md_content_font_family:HYQH-65S;
+
+//md大标题 other专属
+$md_mid_title_size:18px;
+$md_mid_title_height:24px;
+$md_mid_title_color:#ffffff;
+$md_mid_title_margin_top:15px;
+$md_mid_title_margin_left:23px;
+$md_mid_title_font_family:HYQH-65S;
+$md_mid_title_transform: scale(2);
+
+//md内容 other专属
+$md_mid_content_size:12px;
+$md_mid_content_line_height:16px;
+$md_mid_content_color:#86868b;
+$md_mid_content_margin_top:5px;
+$md_mid_content_margin_left:23px;
+$md_mid_content_font_family:HYQH-75S;
+$md_mid_content_transform: scale(1.5);
+
+
+
+//白色字体
+$md_content_white_color:#ffffff;
+$md_content_gary_color:#9E9E9E;
+
+//tuv 专属
+$md_tuv_tips_size: 10px;
+$md_tuv_tips_margin_top:8px;
+
+/******************
+*   2560 超大pc端
+*******************/
+
+//xl小标题
+$xl_subtitle_size:38px;
+$xl_subtitle_line_height:57px;
+$xl_subtitle_color:#666666;
+$xl_subtitle_font_family:HYQH-65S;
+
+//xl大标题
+$xl_title_size:56px;
+$xl_title_height:60px;
+$xl_title_color:#000;
+$xl_title_margin_top:0px;
+$xl_title_font_family:HYQH-65S;
+
+//xl内容
+$xl_content_size:22px;
+$xl_content_line_height:35px;
+$xl_content_color:#444444;
+$xl_content_margin_top:18px;
+$xl_content_font_family:HYQH-65S;
+
+//xl大标题 other专属
+$xl_mid_title_size:45px;
+$xl_mid_title_height:56px;
+$xl_mid_title_color:#ffffff;
+$xl_mid_title_margin_top:25px;
+$xl_mid_title_margin_left:23px;
+$xl_mid_title_font_family:HYQH-65S;
+$xl_mid_title_transform: scale(2);
+
+//xl内容 other专属
+$xl_mid_content_size:22px;
+$xl_mid_content_line_height:30px;
+$xl_mid_content_color:#A1A1A6;
+$xl_mid_content_margin_top:5px;
+$xl_mid_content_margin_left:23px;
+$xl_mid_content_font_family:HYQH-75S;
+$xl_mid_content_transform: scale(1.5);
+
+
+
+//白色字体
+$xl_content_white_color:#ffffff;
+$xl_content_gary_color:#9E9E9E;
+
+//tuv 专属
+$xl_tuv_tips_size: 20px;
+$xl_tuv_tips_margin_top:22px;
+
+
+/******************
+*   平板端
+*******************/
+
+//pd小标题
+$pd_subtitle_size:27px;
+$pd_subtitle_line_height:36px;
+$pd_subtitle_color:#666666;
+$pd_subtitle_font_family:HYQH-65S;
+
+//pd大标题
+$pd_title_size:40px;
+$pd_title_height:50px;
+$pd_title_color:#000;
+$pd_title_margin_top:0px;
+$pd_title_font_family:HYQH-65S;
+
+//pd内容
+$pd_content_size:18px;
+$pd_content_line_height:29px;
+$pd_content_color:#86868B;
+$pd_content_margin_top:15px;
+$pd_content_font_family:HYQH-65S;
+
+//pd大标题 other专属
+$pd_mid_title_size:26px;
+$pd_mid_title_height:24px;
+$pd_mid_title_color:#ffffff;
+$pd_mid_title_margin_top:15px;
+$pd_mid_title_margin_left:23px;
+$pd_mid_title_font_family:HYQH-65S;
+$pd_mid_title_transform: scale(2);
+
+//pd内容 other专属
+$pd_mid_content_size:14px;
+$pd_mid_content_line_height:16px;
+$pd_mid_content_color:#A1A1A6;
+$pd_mid_content_margin_top:5px;
+$pd_mid_content_margin_left:23px;
+$pd_mid_content_font_family:HYQH-75S;
+$pd_mid_content_transform: scale(1.5);
+
+
+
+//白色字体
+$pd_content_white_color:#ffffff;
+$pd_content_gary_color:#9E9E9E;
+
+//tuv 专属
+$pd_tuv_tips_size: 18px;
+$pd_tuv_tips_margin_top:12px;

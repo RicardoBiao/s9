@@ -1,0 +1,183 @@
+@import "../utils/utils.scss";
+
+@media (min-width: 1921px) {
+    .s9_look {
+        width: 100vw;
+        height: 4367px;
+        background-color: #fff;
+        @include response-image-lg('../images/s9-look-bg',".jpg");
+        background-size: 100% 100%;
+        position: relative;
+
+        .s9_look_main {
+            width: 1200px;
+            height: 100%;
+            margin: auto;
+
+            .s9_look_phone1 {
+                width: 682px;
+                height: 855px;
+                margin: 474px auto auto 320px;
+                @include response-image-xl('../images/s9-look-phone1');
+                background-size: 100% 100%;
+                position: absolute;
+                z-index: 4;
+                //animation: phpnemove 3s infinite;
+            }
+
+            .s9_look_phone2 {
+                width: 804px;
+                height: 752px;
+                margin: 1170px auto auto -20px;
+                @include response-image-xl('../images/s9-look-phone2');
+                background-size: 100% 100%;
+                position: absolute;
+                z-index: 3;
+                //animation: phpnemove 3s 2s infinite;
+            }
+
+            .s9_look_phone4 {
+                width: 1200px;
+                // height: 700px;
+                margin: auto;
+                position: absolute;
+
+                .s9_look_phone3 {
+                    width: 659px;
+                    height: 934px;
+                    margin: 1518px auto auto 470px;
+                    @include response-image-xl('../images/s9-look-phone3');
+                    background-size: 100% 100%;
+                    position: absolute;
+                    z-index: 2;
+                    //animation: phpnemove 3s 1s infinite;
+                }
+
+                .s9-look-left-text {
+                    width: 352px;
+                    height: 95px;
+                    margin-left: 142px;
+                    margin-top: 1720px;
+                    @include response-image-xl('../images/s9-look-left-text');
+                    background-size: 100% 100%;
+                    position: absolute;
+                    z-index: 3;
+                    opacity: 0;
+                }
+
+                .s9-look-right-text {
+                    width: 302px;
+                    height: 85px;
+                    margin-left: 775px;
+                    margin-top: 1720px;
+                    @include response-image-xl('../images/s9-look-right-text');
+                    background-size: 100% 100%;
+                    position: absolute;
+                    z-index: 1;
+                    opacity: 0;
+                }
+            }
+
+            .s9_look_btn_box {
+                width: 684px;
+                height: 83px;
+                margin: 3890px auto auto 260px;
+                position: absolute;
+
+                .s9_btn1,
+                .s9_btn2 {
+                    width: 301px;
+                    height: 83px;
+                    float: left;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+                .s9_btn1{
+                    @include response-image-xl('../images/s9-look-git-left','.gif');
+                    // @include response-image-xl('../images/s9-look-git-right','.gif');
+
+                }
+
+                .s9_btn2 {
+                    float: right;
+                    @include response-image-xl('../images/s9-look-git-right','.gif');
+                    .s9_btn2-a{
+                        width:301px;
+                        height:83px;
+                        display:block;
+                    }
+
+                }
+
+                // .s9_btn1_text,
+                // .s9_btn2_text {
+                //     width: 100%;
+                //     position: absolute;
+                //     font-size: 29px;
+                //     line-height: 83px;
+                //     color: #ffffff;
+                //     text-align: center;
+                //     font-family: HYQH-75S;
+                // }
+
+                // .s9_btn_video_bg {
+                //     transform: translate(10%, -40%) scale(1.3);
+                //     position: absolute;
+                //     left: 0;
+                //     top: 50%;
+                // }
+
+            }
+
+            .s9_keyframe {
+                width: 1200px;
+                height: 10px;
+                position: absolute;
+                margin-top: 1856px;
+            }
+
+            .s9-popup-player {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                display: none;
+
+                .s9_popup_player_ct {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .mask {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, 0.9);
+                }
+
+                .video-fr {
+                    width: 960px;
+                    height: 540px;
+                    position: relative;
+                }
+            }
+        }
+
+    }
+}
+
+/* @keyframes phpnemove {
+    0% {top: 0px;}
+    50% {top: 25px;}
+    100% {top: 0px;}
+} */

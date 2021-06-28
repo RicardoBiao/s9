@@ -1,0 +1,85 @@
+@import "../utils/utils.scss";
+
+@media screen and (max-width:768px) {
+    body {
+        .s9_show_md{
+            display: block;
+            width: 100vw;
+            height: 800px;
+            background-color: #fff;
+            position: relative;
+
+            .s9_show_mian_md{
+                width: 90vw;
+                height: 714px;
+                position: absolute;
+                left:0;
+                right:0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+
+                .s9_show_box1_md{
+                    width: 100%;
+                    height: 220px;
+                    overflow: hidden;
+                    background-color:#F3F6FC ;
+                    border-radius: 15px;
+
+                    .s9_show1_md{
+                        width: 90vw;
+                        height: 236px;
+                        margin-left:11px;
+                        background-size: 90vw 60vw;
+                        background-repeat: no-repeat;
+                        @include response-image-md('../images/s9-show1','.jpg');
+                        // @media screen and (max-height:736px){
+                        //     height:224px;
+                        // }
+
+                    }
+                    
+                } 
+                .s9_show_box2_md{
+                    width: 100%;
+                    height: 220px;
+                    margin-top:15px;
+                    overflow: hidden;
+                    background-color:#F3F6FC ;
+                    border-radius: 15px;
+
+                    .s9_show2_md{
+                        width: 90vw;
+                        height: 220px;
+                        // margin-top:15px;
+                        background-size: 90vw 59vw;
+                        background-repeat: no-repeat;
+                        @include response-image-md('../images/s9-show2',".jpg");
+                    }
+                }
+
+                .s9_show_box3_md{
+                    width: 100%;
+                    height: 220px;
+                    margin-top:15px;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    background-color:#F3F6FC ;
+
+                    .s9_show3_md{
+                        width: 90vw;
+                        height: 236px;
+                        background-size: 90vw 59vw;
+                        background-repeat: no-repeat;
+                        @include response-image-md('../images/s9-show3',".jpg");
+
+                    }
+                }
+            }
+        }
+
+        .s9_show{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "../utils/utils.scss";
+@media screen and (max-width:768px) {
+    body {
+        .s9_isocell_md {
+            display: block;
+            width: 100vw;
+            height: 630px;
+            position: relative;
+            background-color: #ffffff;
+            .s9_isocell_main_md {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding-top: 50px;
+                box-sizing: border-box;
+                .s9_isocell_textbox_md {
+                    width: 80vw;
+                    text-align: left;
+                    height: 200px;
+                    margin: auto;
+                    .content {
+                        margin-top: 13px;
+                    }
+                }
+                .s9_isocell_imgbox_md {
+                    width: 357px;
+                    height: 260px;
+                    margin: auto;
+                    .s9_isocell_photo_img_md {
+                        width: 357px;
+                        height: 260px;
+                        margin: 100px auto auto auto;
+                        @include response-image-md('../images/s9-isocell-img', ".jpg");
+                        background-size: 100% 100%;
+                        opacity: 0.5;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .content {
+                    width: 300px;
+                    text-align: left;
+                    height: 70px;
+                    // margin: 10px auto auto auto;
+                    margin-top:10px;
+                }
+            }
+        }
+        .s9_isocell {
+            display: none;
+        }
+    }
+}

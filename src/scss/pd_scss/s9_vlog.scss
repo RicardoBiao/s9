@@ -1,0 +1,48 @@
+@media(max-width: 1080px) {
+    .s9_vlog{
+        width: 100vw;
+        height: 780px;
+        background: #070C1A;
+        position: relative;
+        margin-top:160px;
+        .s9_vlog_main{
+            width: 800px;
+            height: 100%;
+            position: relative;
+            margin: auto;
+            padding-top: 0px;
+    
+            .s9_vlog_textbox{
+                width: 800px;
+                text-align: center;
+                // height: 103px;
+                margin:auto;
+            }
+    
+           .s9_vlog_videobox{
+                width: 800px;
+                height: 420px;
+                margin: auto;
+    
+                .s9_vlog_video{
+                    width: 800px;
+                    height: 420px;
+                    // margin: 67px auto auto auto;
+                }
+           }
+    
+           .content_white{
+                width: 800px;
+                text-align: center;
+                // height: 70px;
+                // margin:98px auto auto auto;
+            }
+    
+        }
+        
+    }
+    
+    .s9_vlog_md {
+        display: none;
+    } 
+}

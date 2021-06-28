@@ -1,0 +1,85 @@
+.s9_sixnm{
+    width: 100vw;
+    height: 1000px;
+    background: #070C1A;
+    position: relative;
+    padding-top: 100px;
+    .s9_sixnm_main{
+        width: 1000px;
+        height: 940px;
+        position:relative;
+        margin: auto;
+        .s9_sixnm_textbox{
+            width: 1000px;
+            text-align: center;
+            height: 103px;
+            margin:auto;
+        }
+       .s9_sixnm_box{
+            width: 478px;
+            height: 478px;
+            margin: auto;  
+       }
+       .s9_sixnm_icon_box {
+            width: 400px;
+            height: 83px;
+            margin: auto;
+            margin-top: 155px;
+            position: relative;
+
+        .s9_sixnm_icon1 {
+            width: 101px;
+            height: 78px;
+            @include response-image-lg('../images/s9-sixnm-icon1');
+            background-size:100% 100%;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .s9_sixnm_icon2 {
+            width: 101px;
+            height: 78px;
+            @include response-image-lg('../images/s9-sixnm-icon2');
+            background-size:100% 100%;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+       }
+       .s9_sixnm_imgbox{
+            width: 884px;
+            margin:auto;
+       }
+       .s9_sixnm_photo_img1{
+            width: 884px;
+            height: 994px;
+            top:-75px;
+            @include response-image-lg('../images/s9-6nm-img');
+            background-size:100% 100%;
+            position: absolute;
+        }
+        .s9_sixnm_photo_img2{
+            width: 884px;
+            height: 994px;
+            top:-75px;
+            @include response-image-lg('../images/s9-6nm-img2');
+            background-size:100% 100%;
+            position: absolute;
+            opacity: 0;
+        }
+       .content_white{
+        width: 1100px;
+        text-align: center;
+        height: 70px;
+        margin: 31px auto auto auto;
+    }
+
+    }
+}
+
+.s9_sixnm_md{
+    display: none;
+}

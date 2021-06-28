@@ -1,0 +1,90 @@
+@media (min-width: 1921px) {
+
+    .s9_shadow {
+        width: 100vw;
+        height: 1440px;
+        position: relative;
+        background-color: #ffffff;
+        margin-bottom: 200px;
+
+        .s9_shadow_main {
+            width: 1600px;
+            height: 1440px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            margin: auto;
+
+            .s9_shadow_textbox {
+                width: 660px;
+                height: 228px;
+                // padding-left: 50px;
+                float: right;
+                margin-top: 125px;
+
+                .s9_shadow_imgbox1 {
+                    width: 640px;
+                    height: 880px;
+
+                    .s9_shadow_photo1_img {
+                        width: 640px;
+                        height: 880px;
+                        margin-top: 0px;
+                        @include response-image-lg('../images/s9-shadow-photo2');
+                        background-size: 100% 100%;
+                        position: absolute;
+                    }
+                }
+
+                .s9_shadow_text1 {
+                    float: none;
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-weight: 65;
+                    color: #444444;
+                    margin-top: 20px;
+                }
+            }
+
+            .s9_shadow_imgbox2 {
+                width: 640px;
+                height: 934px;
+                float: left;
+
+                .s9_shadow_photo2_img {
+                    .s9_shadow_video {
+                        width: 640px;
+                        height: 880px;
+                        display: block;
+                    }
+
+                    video::-webkit-media-controls {
+                        display: none !important;
+                    }
+
+                    width: 640px;
+                    height: 880px;
+                    @include response-image-lg('../images/s9-shadow-video',".jpg");
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+
+                .s9_shadow_text2 {
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-weight: 65;
+                    color: #444444;
+                    margin-top: 16px;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    .s9_shadow_md {
+        display: none;
+    }
+}

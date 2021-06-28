@@ -1,0 +1,85 @@
+@media screen and (max-width:768px) {
+    body {
+        .s9_other {
+            width: 100vw;
+            height: 324vw;
+            background: #000000;
+            position: relative;
+
+            .s9_other_main {
+                width: 100vw;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                margin: 100px auto auto auto;
+
+                .s9_other_box1 {
+                    width: 80vw;
+                    height: 123vw;
+                    border-radius: 10px;
+                    background-color: #1E1F23;
+                    float: left;
+                    margin: 0 10vw;
+
+                    .s9_other_box1_textbox {
+                        margin: 0;
+                    }
+
+                    .s9_other_phone {
+                        width: 44vw;
+                        height: 94vw;
+                        margin: 7vw auto;
+                        @include response-image-md('../images/s9-other-phone',".jpg");
+                        background-size: 100% 100%;
+                    }
+                }
+
+                .s9_other_box2 {
+                    width: 80vw;
+                    height: 74vw;
+                    border-radius: 10px;
+                    background-color: #1E1F23;
+                    // float: right;
+                    margin: 8vw 10vw;
+
+                    .s9_other_box2_textbox {
+                        margin: 0;
+                    }
+
+                    .s9_other_element {
+                        width: 69vw;
+                        height: 46vw;
+                        margin: 6vw auto 7vw;
+                        @include response-image-md('../images/s9-other-element', ".jpg");
+                        background-repeat: no-repeat;
+                        background-size: 101% 101%;
+                        background-position: center center;
+                    }
+                }
+
+                .s9_other_box3 {
+                    width: 80vw;
+                    height: 61vw;
+                    border-radius: 10px;
+                    background-color: #1E1F23;
+                    margin: 0 10vw;
+                    float: right;
+
+                    .s9_other_box3_textbox {
+                        margin: 0;
+                    }
+
+                    .s9_other_mole {
+                        width: 69vw;
+                        height: 33vw;
+                        margin: 3vw auto;
+                        @include response-image-md('../images/s9-other-mole');
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@media(max-width: 1080px) {
+    .s9_wallpaper{
+        width: 100vw;
+        height: 720px;
+        background: #000000;
+        position: relative;
+        .s9_wallpaper_main{
+            width: 800px;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            position:absolute;
+            transform: translate(-50%,-50%);
+            padding-top: 290px;
+            margin: auto;
+            .s9_vlog_videobox{
+                width: 800px;
+                height: 450px;
+                margin: auto;
+    
+                .s9_wallpaper_video{
+                    width: 800px;
+                    height: 450px;
+                    margin: 20px auto auto auto;
+                }
+                video::-webkit-media-controls{
+                    display:none !important;
+                }
+           }
+            .s9_wallpaper_imgbox{
+                width: 800px;
+                height: 528px;
+                .s9_wallpaper_phone1{
+                    width: 180px;
+                    // height: 492px;
+                    height:415.33px;
+                    margin-top:35px;
+                    @include response-image-lg('../images/s9-wallpaper-phone1');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index: 1;
+                }
+                .s9_wallpaper_phone2{
+                    width: 186.5px;
+                    // height: 509.5px;
+                    height:432.83px;
+                    margin-top:18px;
+                    left: 130px;
+                    @include response-image-lg('../images/s9-wallpaper-phone2');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index: 2;
+                }
+                .s9_wallpaper_phone3{
+                    width: 247.5px;
+                    // height: 526.5px;
+                    height:449.83px;
+                    left: 288px;
+                    @include response-image-lg('../images/s9-wallpaper-phone3');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index: 3;
+                }
+                .s9_wallpaper_phone4{
+                    width: 193px;
+                    // height: 509px;
+                    height:432.33px;
+                    margin-top:18px;
+                    left: 485px;
+                    @include response-image-lg('../images/s9-wallpaper-phone4');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index: 2;
+                }
+                .s9_wallpaper_phone5{
+                    width: 186.5px;
+                    // height: 491.5px;
+                    height:414.83px;
+                    margin-top:35px;
+                    left:624px;
+                    @include response-image-lg('../images/s9-wallpaper-phone5');
+                    background-size:100% 100%;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+            .s9_wallpaper_textbox{
+                width: 800px;
+                height: 60px;
+                // margin-top:167px auto auto auto;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}

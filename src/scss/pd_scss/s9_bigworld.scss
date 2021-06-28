@@ -1,0 +1,92 @@
+@media(max-width:1080px) {
+    .s9_bigworld {
+        width: 100vw;
+        height: 768px;
+        background: #070C1A;
+        position: relative;
+        .s9_bigworld_main {
+            width: 100vw;
+            height: 768px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            box-sizing: border-box;
+            @include response-image-lg('../images/s9-bigworld-phone', ".jpg");
+            background-size: 1024px 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            .s9_bigworld_textbox {
+                width: 800px;
+                height: 199px;
+                margin: -90px auto auto auto;
+                .subtitle_white2 {
+                    display: none;
+                }
+                .content_white {
+                    width: 359px;
+                }
+            }
+            .s9_bigworld_imgbox {
+                .s9_bigworld_tips1 {
+                    z-index: 2;
+                    right: 449px;
+                    margin-top: 53px;
+                    text-align: center;
+                    position: absolute;
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 75;
+                        color: #ffffff;
+                    }
+                    .s9_bigworld_line1 {
+                        width: 1px;
+                        height: 272px;
+                        background-color: #E8E8E8;
+                        margin: 8px 0px auto auto
+                    }
+                }
+                .s9_bigworld_tips2 {
+                    z-index: 2;
+                    right: 385px;
+                    margin-top: 6px;
+                    text-align: center;
+                    position: absolute;
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 75;
+                        color: #ffffff;
+                    }
+                    .s9_bigworld_line2 {
+                        width: 1px;
+                        height: 278px;
+                        background-color: #E8E8E8;
+                        margin: 8px 0px auto auto
+                    }
+                }
+                .s9_bigworld_tips3 {
+                    z-index: 2;
+                    right: 327.33px;
+                    text-align: center;
+                    margin-top: -49px;
+                    position: absolute;
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 75;
+                        color: #ffffff;
+                    }
+                    .s9_bigworld_line3 {
+                        width: 1px;
+                        height: 357px;
+                        background-color: #E8E8E8;
+                        margin: 8px 0px auto auto
+                    }
+                }
+            }
+        }
+    }
+}

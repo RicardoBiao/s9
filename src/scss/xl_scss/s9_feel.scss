@@ -1,0 +1,42 @@
+@import "../utils/utils.scss";
+// @include response-image-lg('../images/y73s-kv-img','.jpg');
+@media (min-width: 1921px) {
+    .s9_feel {
+        width: 100vw;
+        height: 1440px;
+        background-color: #fff;
+        .s9_fell_main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .s9_fell_content {
+                width: 1600px;
+                height: 1060px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .s9_fell_text_box {
+                    width: 1300px;
+                    height: 196px;
+                    margin: 0 auto;
+                }
+                .feel_hand_img_box {
+                    width: 1600px;
+                    height: 635px;
+                    margin-left: 100px;
+                    .feel_hand_img {
+                        width: 2014px;
+                        height: 100%;
+                        @include response-image-xl('../images/hand', ".jpg");
+                        background-size: 2014px 635px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

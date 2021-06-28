@@ -1,0 +1,32 @@
+@media screen and (max-width:768px) {
+    body {
+
+        .s9_wa {
+            width: 100vw;
+            height: 30vh;
+            background: #070C1A;
+            position: relative;
+
+            .s9_wa_main {
+                width: 60vw;
+                height: 27vw;
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                margin:auto;
+                padding:0;
+
+                .s9_wa_img {
+                    width: 60vw;
+                    height: 27vw;
+                    margin: auto;
+                    @include response-image-md('../images/s9-wa-img');
+                    background-size: 100% 100%;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+} 

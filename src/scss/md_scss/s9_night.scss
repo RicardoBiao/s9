@@ -1,0 +1,107 @@
+@media screen and (max-width:768px) {
+
+    body {
+
+        .s9_night_md {
+            display: block;
+            width: 100vw;
+            height: 930.39px;
+            background: #070C1A;
+            position: relative;
+
+            .s9_night_main_md {
+                width: 100vw;
+                height: 930.39px;
+                padding-top: 29.33vw;
+
+                .title_white {
+                    margin-top: 0;
+                }
+
+                .s9_night_textbox_md {
+                    width: 80vw;
+                    text-align: left;
+                    height: 57.33vw;
+                    margin: auto 10vw;
+
+                    .content_white_md {
+                        width: 80vw;
+                        text-align: left;
+                        height: 32vw;
+                        margin: 4vw auto auto auto;
+                    }
+
+                    .title_white {
+                        width: 90vw;
+                    }
+                }
+
+                .s9_night_imgbox_md {
+                    width: 357px;
+                    height: 470px;
+                    margin: auto;
+                    margin-top: -39px;
+
+                    .s9_night_photo1_img_md {
+                        width: 357px;
+                        height: 470px;
+                        margin: 2.66vw auto auto auto;
+                        @include response-image-md('../images/s9-night-photo1');
+                        background-size: 100% 100%;
+                        position: absolute;
+                    }
+
+                    .s9_night_photo2_img_md {
+                        width: 357px;
+                        height: 470px;
+                        margin: 2.66vw auto auto auto;
+                        @include response-image-md('../images/s9-night-photo2');
+                        background-size: 100% 100%;
+                        position: absolute;
+                    }
+
+                }
+
+                @media screen and (max-width:375px) {
+                    .s9_night_imgbox_md {
+                        width: 357px;
+                        height: 470px;
+                        margin: auto;
+                        margin-top: 0px;
+
+                        .s9_night_photo1_img_md {
+                            width: 357px;
+                            height: 470px;
+                            margin: 2.66vw auto auto auto;
+                            @include response-image-md('../images/s9-night-photo1');
+                            background-size: 100% 100%;
+                            position: absolute;
+                            background-repeat: no-repeat;
+                        }
+
+                        .s9_night_photo2_img_md {
+                            width: 357px;
+                            height: 470px;
+                            margin: 2.66vw auto auto auto;
+                            @include response-image-md('../images/s9-night-photo2');
+                            background-size: 100% 100%;
+                            position: absolute;
+                            background-repeat: no-repeat;
+
+                        }
+
+                    }
+                }
+
+
+            }
+
+        }
+
+        .s9_night {
+            display: none;
+        }
+
+    }
+
+}

@@ -1,0 +1,44 @@
+@media (min-width: 1921px) {
+
+    .s9_mix {
+        width: 100vw;
+        height: 1350px;
+        background: #000000;
+        position: relative;
+
+        .s9_mix_main {
+            width: 1300px;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            padding-top: 200px;
+            margin: auto;
+
+            .s9_mix_imgbox {
+                width: 745px;
+                height: 968px;
+                float: left;
+
+                .s9_mix_phone {
+                    width: 745px;
+                    height: 968px;
+                    @include response-image-xl('../images/s9-mix-phone',".jpg");
+                    background-size: 100% 100%;
+                }
+            }
+
+            .s9_mix_textbox {
+                width: 260px;
+                height: 120px;
+                margin-top: 315px;
+                margin-right: 190px;
+                float: right;
+                .mid_content_white{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
